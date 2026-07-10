@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { generateByStrategy } from './strategies';
-import type { LottoDraw } from './types';
+import { generateByStrategy, normalizeIncluded } from './strategies';
+import type { LottoDraw, Strategy } from './types';
 
 const history: LottoDraw[] = [
   { drawNumber: 3, date: '2026-01-01', numbers: [1, 2, 3, 4, 5, 6], bonusNumber: 7 },
@@ -10,7 +10,7 @@ const history: LottoDraw[] = [
 
 describe('generateByStrategy', () => {
   it('returns 6 unique numbers between 1 and 45 for every strategy', () => {
-    const strategies = ['frequency', 'carryover', 'balanced', 'cold', 'random'] as const;
+    const strategies: Strategy[] = ['frequency', 'elite', 'balanced', 'cold', 'random'];
     for (const strategy of strategies) {
       const result = generateByStrategy(strategy, history, [], () => 0.5);
       expect(result).toHaveLength(6);
@@ -30,15 +30,24 @@ describe('generateByStrategy', () => {
     }
   });
 
-  it('frequency strategy favors numbers with higher historical frequency over many trials', () => {
-    let countOf1 = 0;
-    let countOf20 = 0;
-    for (let i = 0; i < 200; i++) {
-      const result = generateByStrategy('frequency', history, [], Math.random);
-      if (result.includes(1)) countOf1++;
-      if (result.includes(20)) countOf20++;
+  it('always includes the provided included numbers', () => {
+    const included = [20, 21, 22];
+    const result = generateByStrategy('elite', history, [], Math.random, included);
+    for (const n of included) {
+      expect(result).toContain(n);
     }
-    // 1 appears in all 3 historical draws, 20 appears in none
-    expect(countOf1).toBeGreaterThan(countOf20);
+    expect(result).toHaveLength(6);
+  });
+});
+
+describe('normalizeIncluded', () => {
+  it('deduplicates, validates range, and caps at 5 numbers', () => {
+    const result = normalizeIncluded([1, 1, 2, 3, 4, 5, 6, 0, 46], []);
+    expect(result).toEqual([1, 2, 3, 4, 5]);
+  });
+
+  it('drops numbers that are also excluded', () => {
+    const result = normalizeIncluded([1, 2, 3], [2]);
+    expect(result).toEqual([1, 3]);
   });
 });

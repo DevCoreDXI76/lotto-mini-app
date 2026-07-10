@@ -39,16 +39,22 @@ export default function GeneratorPage() {
   const budgetInfo = calcBudgetInfo(amount);
   const [collapsed, setCollapsed] = useState(true);
 
-  const excluded = excludedInput
-    .split(',')
-    .map((s) => Number(s.trim()))
-    .filter((n) => Number.isInteger(n) && n >= 1 && n <= 45);
+  const excluded = useMemo(
+    () =>
+      excludedInput
+        .split(',')
+        .map((s) => Number(s.trim()))
+        .filter((n) => Number.isInteger(n) && n >= 1 && n <= 45),
+    [excludedInput],
+  );
 
-  const includedRaw = includedInput
-    .split(',')
-    .map((s) => Number(s.trim()))
-    .filter((n) => Number.isInteger(n) && n >= 1 && n <= 45);
-  const included = normalizeIncluded(includedRaw, excluded);
+  const included = useMemo(() => {
+    const includedRaw = includedInput
+      .split(',')
+      .map((s) => Number(s.trim()))
+      .filter((n) => Number.isInteger(n) && n >= 1 && n <= 45);
+    return normalizeIncluded(includedRaw, excluded);
+  }, [includedInput, excluded]);
 
   function handleGenerate() {
     const gameCount = mode === 'budget' ? budgetInfo.gameCount : count;

@@ -4,7 +4,7 @@ import { Disclaimer } from '@/components/lotto/Disclaimer';
 
 export default function Home() {
   return (
-    <main className="max-w-xl mx-auto p-6 space-y-6">
+    <main className="min-w-0 max-w-xl mx-auto p-6 space-y-6">
       <h1 className="text-2xl font-bold">로또 미니앱</h1>
       <LatestDraw />
       <Link

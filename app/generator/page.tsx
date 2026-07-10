@@ -81,7 +81,7 @@ export default function GeneratorPage() {
   );
 
   return (
-    <main className="max-w-5xl mx-auto p-4 sm:p-6">
+    <main className="min-w-0 max-w-5xl mx-auto p-4 sm:p-6">
       <h1 className="text-2xl font-bold mb-4">번호 생성기</h1>
       <div className="grid grid-cols-1 lg:grid-cols-[380px_1fr] gap-6">
         <div className="space-y-6">

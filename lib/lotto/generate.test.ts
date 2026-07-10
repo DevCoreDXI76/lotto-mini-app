@@ -22,4 +22,11 @@ describe('generateUniqueGames', () => {
     const games = generateUniqueGames('random', 3, excluded, history, Math.random);
     expect(games).toHaveLength(0);
   });
+
+  it('every generated game contains all included numbers', () => {
+    const games = generateUniqueGames('random', 3, [], history, Math.random, [9, 18, 27]);
+    for (const g of games) {
+      expect(g.numbers).toEqual(expect.arrayContaining([9, 18, 27]));
+    }
+  });
 });

@@ -7,13 +7,14 @@ export function generateUniqueGames(
   excluded: number[],
   history: LottoDraw[],
   rng: () => number = Math.random,
+  included: number[] = [],
 ): GeneratedGame[] {
   const seen = new Set<string>();
   const games: GeneratedGame[] = [];
   const maxAttempts = gameCount * 50 + 100;
 
   for (let attempt = 0; attempt < maxAttempts && games.length < gameCount; attempt++) {
-    const raw = generateByStrategy(strategy, history, excluded, rng);
+    const raw = generateByStrategy(strategy, history, excluded, rng, included);
     if (raw.length < 6) break;
 
     const numbers = [...raw].sort((a, b) => a - b);

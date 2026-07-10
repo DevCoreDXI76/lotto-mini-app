@@ -1,18 +1,10 @@
 'use client';
 
-import { useEffect, useState } from 'react';
 import { NumberBall } from './NumberBall';
-import type { LottoDraw } from '@/lib/lotto/types';
+import { useLatestDraw } from '@/lib/lotto/useLatestDraw';
 
 export function LatestDraw() {
-  const [data, setData] = useState<{ draw: LottoDraw; source: 'live' | 'cache' } | null>(null);
-
-  useEffect(() => {
-    fetch('/api/lotto/latest')
-      .then((r) => r.json())
-      .then(setData)
-      .catch(() => setData(null));
-  }, []);
+  const data = useLatestDraw();
 
   if (!data) return <p className="text-sm text-gray-400">직전 회차 정보를 불러오는 중입니다...</p>;
 

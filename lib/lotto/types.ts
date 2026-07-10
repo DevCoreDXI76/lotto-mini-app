@@ -1,11 +1,18 @@
-export type Strategy = 'frequency' | 'carryover' | 'balanced' | 'cold' | 'random';
+export type Strategy = 'frequency' | 'elite' | 'balanced' | 'cold' | 'random';
 
-export const STRATEGIES: { id: Strategy; label: string }[] = [
-  { id: 'frequency', label: '빈도 기반' },
-  { id: 'carryover', label: '이월수 반영' },
-  { id: 'balanced', label: '균형 조합' },
-  { id: 'cold', label: '미출현 번호 역추세' },
-  { id: 'random', label: '종합 랜덤' },
+export interface StrategyMeta {
+  id: Strategy;
+  icon: string;
+  label: string;
+  formula: string;
+}
+
+export const STRATEGIES: StrategyMeta[] = [
+  { id: 'frequency', icon: '🔵', label: '빈도 기반', formula: '빈도 + 이월수 + 이웃수 + 동끝수' },
+  { id: 'elite', icon: '🏆', label: '엘리트 집중', formula: '빈도×3 + 이월수×3 + Cold×2' },
+  { id: 'balanced', icon: '⚖️', label: '균형 조합', formula: '홀짝 3:3 + 구간 균등배분' },
+  { id: 'cold', icon: '❄️', label: '미출현 역추세', formula: '미출현 상위 25수 역추세 조합' },
+  { id: 'random', icon: '🔀', label: '종합 랜덤', formula: '5개 기법 균등 가중 랜덤' },
 ];
 
 export interface LottoDraw {

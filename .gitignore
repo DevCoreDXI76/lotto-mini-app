@@ -42,3 +42,6 @@ next-env.d.ts
 
 # Notion onboarding (local only)
 .notion/
+
+.vercel
+.env*

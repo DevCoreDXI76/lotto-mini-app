@@ -1,6 +1,6 @@
 # 로또 미니앱 — 기술 아키텍처 & 설계 문서
 
-> 이 문서는 요구사항이 아니라 **기술 설계**를 다룬다. 기능 요구사항/Acceptance Criteria는 [docs/PRD.md](./PRD.md)를, 구현 실행 이력(태스크별 커밋 로그)은 `docs/superpowers/plans/`를 참고한다. 이 문서는 F1(혼합 전략 리치 UI)과 F3(역대 통계) 두 기능의 아키텍처를 다룬다 — F2/F4/F5는 별도 설계 없이 기존 엔진을 재사용하거나(F2) 아직 설계 전이다(F4/F5 상세, F9~F13).
+> 이 문서는 요구사항이 아니라 **기술 설계**를 다룬다. 기능 요구사항/Acceptance Criteria는 [docs/PRD.md](./PRD.md)를, 구현 실행 이력(태스크별 커밋 로그)은 `docs/superpowers/plans/`를 참고한다. 이 문서는 F1(혼합 전략 리치 UI), F3(역대 통계), F5(최초 진입 안내 모달)의 아키텍처를 다룬다 — F2는 별도 설계 없이 기존 엔진을 재사용하고, F4/F9~F13은 아직 설계 전이다.
 
 ## 공통 파일 구조
 
@@ -99,6 +99,18 @@ F1/F2가 쓰는 `data/lotto-history-seed.json`(최근 150회차)과는 별도로
 
 - `/stats`(신규): TOP 6 강조 + 전체 1~45위 펼쳐보기(`FullRankingToggle`, 클라이언트 컴포넌트) + 집계 기준 회차 범위/갱신일 + "이 통계는 과거 데이터일 뿐이며 향후 당첨을 예측하지 않습니다" 디스클레이머.
 - 홈(`/`): TOP 6 번호 미리보기 카드 + `/stats` 링크.
+
+## F5 — 최초 진입 안내 모달
+
+### 컴포넌트 (`components/lotto/FirstVisitNotice.tsx`, 신규)
+
+`localStorage` 키 `lotto-first-visit-seen`으로 노출 여부를 추적하는 클라이언트 컴포넌트. 서버 렌더링 시에는 항상 "숨김" 상태로 렌더링하고, 마운트 후 `useEffect`에서 `localStorage.getItem(...)`을 확인해 값이 없을 때만 `visible` 상태를 켠다 — 이렇게 하면 서버/클라이언트 최초 렌더가 항상 일치해 하이드레이션 불일치가 생기지 않는다.
+
+내용은 PRD F5 AC 그대로: "이 앱은 재미를 위한 서비스이며 당첨을 보장하지 않습니다." "확인" 버튼 클릭 시에만 닫히며(백드롭 클릭·ESC로는 닫히지 않음), 클릭 시 `localStorage.setItem(...)` 후 다시는 노출되지 않는다. 어두운 반투명 백드롭 위에 기존 카드 스타일(`bg-white rounded-xl shadow-sm`)을 재사용한 중앙 정렬 다이얼로그, `role="dialog"` `aria-modal="true"` 적용.
+
+### 적용 위치
+
+`app/layout.tsx`(루트 레이아웃)에서 `{children}`과 함께 항상 렌더링한다 — 홈이 아니라 `/generator`나 `/stats`로 공유 링크를 통해 처음 들어오더라도 동일하게 1회 노출되도록, 개별 페이지가 아닌 루트에 둔다.
 
 ## 문서 동기화
 

@@ -1,5 +1,5 @@
-// picknum.com에서 회차별 당첨번호를 순회 수집해 data/lotto-history-seed.json으로 저장한다.
-// 사용법: npx tsx scripts/fetch-lotto-history.ts <startRound> <endRound>
+// picknum.com에서 회차별 당첨번호를 순회 수집해 지정된 JSON 파일로 저장한다.
+// 사용법: npx tsx scripts/fetch-lotto-history.ts <startRound> <endRound> [outputFileName]
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
@@ -35,9 +35,10 @@ async function fetchRound(round: number): Promise<LottoDraw | null> {
 }
 
 async function main() {
-  const [startArg, endArg] = process.argv.slice(2);
+  const [startArg, endArg, outputArg] = process.argv.slice(2);
   const start = Number(startArg ?? 1082);
   const end = Number(endArg ?? 1231);
+  const outputFile = outputArg ?? 'lotto-history-seed.json';
 
   const draws: LottoDraw[] = [];
   for (let round = end; round >= start; round--) {
@@ -51,10 +52,7 @@ async function main() {
     await new Promise((r) => setTimeout(r, 150));
   }
 
-  writeFileSync(
-    join(process.cwd(), 'data', 'lotto-history-seed.json'),
-    JSON.stringify(draws, null, 2),
-  );
+  writeFileSync(join(process.cwd(), 'data', outputFile), JSON.stringify(draws, null, 2));
 
   if (draws.length > 0) {
     writeFileSync(
@@ -63,7 +61,7 @@ async function main() {
     );
   }
 
-  console.log(`done: ${draws.length} draws saved`);
+  console.log(`done: ${draws.length} draws saved to ${outputFile}`);
 }
 
 main();

@@ -23,7 +23,7 @@ export function IncludeNumbersInput({
         type="text"
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="w-full border rounded px-3 py-2 text-sm"
+        className="w-full bg-white rounded-lg px-3 py-2 text-sm shadow-inner focus:outline-none focus:ring-2 focus:ring-black/10"
         placeholder="예: 6, 36"
       />
       {overLimit && (

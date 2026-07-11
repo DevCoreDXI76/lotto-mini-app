@@ -67,6 +67,14 @@ export default function GeneratorPage() {
     () => computeActivity(getProfileWeights(strategy, history, excluded)),
     [strategy, history, excluded],
   );
+  const topActivityNumbers = useMemo(
+    () =>
+      [...activity]
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 12)
+        .map((a) => a.number),
+    [activity],
+  );
   const primaryCandidates = useMemo(
     () => (strategy === 'random' ? getPrimaryCandidates(history, excluded) : []),
     [strategy, history, excluded],
@@ -81,7 +89,8 @@ export default function GeneratorPage() {
   );
 
   return (
-    <main className="min-w-0 max-w-5xl mx-auto p-4 sm:p-6">
+    <main className="min-w-0 min-h-screen bg-gray-100">
+      <div className="max-w-5xl mx-auto p-4 sm:p-6">
       <h1 className="text-2xl font-bold mb-4">번호 생성기</h1>
       <div className="grid grid-cols-1 lg:grid-cols-[380px_1fr] gap-6">
         <div className="space-y-6">
@@ -99,14 +108,14 @@ export default function GeneratorPage() {
               <button
                 type="button"
                 onClick={() => setMode('count')}
-                className={`flex-1 py-2 rounded-lg border text-sm ${mode === 'count' ? 'bg-black text-white' : 'bg-white'}`}
+                className={`flex-1 py-2 rounded-lg text-sm transition-shadow ${mode === 'count' ? 'bg-black text-white shadow-md' : 'bg-white shadow-sm hover:shadow'}`}
               >
                 세트 수로 선택
               </button>
               <button
                 type="button"
                 onClick={() => setMode('budget')}
-                className={`flex-1 py-2 rounded-lg border text-sm ${mode === 'budget' ? 'bg-black text-white' : 'bg-white'}`}
+                className={`flex-1 py-2 rounded-lg text-sm transition-shadow ${mode === 'budget' ? 'bg-black text-white shadow-md' : 'bg-white shadow-sm hover:shadow'}`}
               >
                 예산으로 선택
               </button>
@@ -154,7 +163,7 @@ export default function GeneratorPage() {
               type="text"
               value={excludedInput}
               onChange={(e) => setExcludedInput(e.target.value)}
-              className="w-full border rounded px-3 py-2 text-sm"
+              className="w-full bg-white rounded-lg px-3 py-2 text-sm shadow-inner focus:outline-none focus:ring-2 focus:ring-black/10"
               placeholder="예: 3, 17, 45"
             />
           </div>
@@ -164,7 +173,7 @@ export default function GeneratorPage() {
           <button
             type="button"
             onClick={handleGenerate}
-            className="w-full bg-black text-white rounded-lg py-3 font-semibold"
+            className="w-full bg-black text-white rounded-lg py-3 font-semibold shadow-md"
           >
             번호 생성하기
           </button>
@@ -175,7 +184,7 @@ export default function GeneratorPage() {
 
           {mode === 'count' && (
             <>
-              <AlgorithmSummaryCard strategy={selectedStrategyMeta} />
+              <AlgorithmSummaryCard strategy={selectedStrategyMeta} topNumbers={topActivityNumbers} />
               <ActivityChart
                 activity={activity}
                 highlighted={strategy === 'random' ? finalCandidates.map((c) => c.number) : []}
@@ -218,7 +227,7 @@ export default function GeneratorPage() {
                 description="4개 전략(빈도/엘리트/균형/Cold) 순위를 합산한 상위 12개"
                 numbers={spreadCandidates}
               />
-              <div className="border rounded-lg p-4">
+              <div className="bg-white rounded-xl shadow-sm p-4">
                 <h3 className="font-semibold text-sm mb-2">최종 조합 후보 8개</h3>
                 <div className="space-y-2">
                   {finalCandidates.map((c) => (
@@ -233,6 +242,7 @@ export default function GeneratorPage() {
             <DetailedDisclaimer drawNumber={latest.draw.drawNumber} date={latest.draw.date} />
           )}
         </div>
+      </div>
       </div>
     </main>
   );

@@ -17,8 +17,8 @@ export function BudgetPicker({
             key={preset}
             type="button"
             onClick={() => onChange(preset)}
-            className={`px-3 py-1.5 rounded-full border text-sm ${
-              amount === preset ? 'bg-black text-white' : 'bg-white'
+            className={`px-3 py-1.5 rounded-full text-sm transition-shadow ${
+              amount === preset ? 'bg-black text-white shadow-md' : 'bg-white shadow-sm hover:shadow'
             }`}
           >
             {preset.toLocaleString()}원
@@ -31,7 +31,7 @@ export function BudgetPicker({
         step={1000}
         value={amount}
         onChange={(e) => onChange(Number(e.target.value))}
-        className="w-full border rounded px-3 py-2 text-sm"
+        className="w-full bg-white rounded-lg px-3 py-2 text-sm shadow-inner focus:outline-none focus:ring-2 focus:ring-black/10"
         placeholder="직접 입력 (원)"
       />
     </div>

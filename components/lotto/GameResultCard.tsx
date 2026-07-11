@@ -25,7 +25,7 @@ export function GameResultCard({
   const oddCount = game.numbers.filter((n) => n % 2 === 1).length;
 
   return (
-    <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between border rounded-lg p-3">
+    <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between rounded-xl p-3 bg-white shadow-sm">
       <div className="flex items-center gap-2">
         <span className="text-xs text-gray-400 w-6 shrink-0">{index + 1}</span>
         <div className="flex gap-1">
@@ -42,7 +42,7 @@ export function GameResultCard({
         )}
         <button
           onClick={handleCopy}
-          className="text-sm px-3 py-1 rounded border hover:bg-gray-50 whitespace-nowrap shrink-0"
+          className="text-sm px-3 py-1 rounded-lg bg-gray-100 hover:bg-gray-200 whitespace-nowrap shrink-0"
           type="button"
         >
           {copied ? '복사됨' : '복사'}

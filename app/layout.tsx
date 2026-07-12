@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { FirstVisitNotice } from "@/components/lotto/FirstVisitNotice";
+import { Footer } from "@/components/lotto/Footer";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -32,6 +33,7 @@ export default function RootLayout({
       <body className="min-h-full">
         <FirstVisitNotice />
         {children}
+        <Footer />
       </body>
     </html>
   );

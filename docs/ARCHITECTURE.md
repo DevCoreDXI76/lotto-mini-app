@@ -1,6 +1,6 @@
 # 로또 미니앱 — 기술 아키텍처 & 설계 문서
 
-> 이 문서는 요구사항이 아니라 **기술 설계**를 다룬다. 기능 요구사항/Acceptance Criteria는 [docs/PRD.md](./PRD.md)를, 구현 실행 이력(태스크별 커밋 로그)은 `docs/superpowers/plans/`를 참고한다. 이 문서는 F1(혼합 전략 리치 UI), F3(역대 통계), F5(최초 진입 안내 모달)의 아키텍처를 다룬다 — F2는 별도 설계 없이 기존 엔진을 재사용하고, F4/F9~F13은 아직 설계 전이다.
+> 이 문서는 요구사항이 아니라 **기술 설계**를 다룬다. 기능 요구사항/Acceptance Criteria는 [docs/PRD.md](./PRD.md)를, 구현 실행 이력(태스크별 커밋 로그)은 `docs/superpowers/plans/`를 참고한다. 이 문서는 F1(혼합 전략 리치 UI), F3(역대 통계), F5(최초 진입 안내 모달), F6(최근 생성 번호 히스토리)의 아키텍처를 다룬다 — F2는 별도 설계 없이 기존 엔진을 재사용하고, F4/F7/F9~F13은 아직 설계 전이다.
 
 ## 공통 파일 구조
 
@@ -111,6 +111,39 @@ F1/F2가 쓰는 `data/lotto-history-seed.json`(최근 150회차)과는 별도로
 ### 적용 위치
 
 `app/layout.tsx`(루트 레이아웃)에서 `{children}`과 함께 항상 렌더링한다 — 홈이 아니라 `/generator`나 `/stats`로 공유 링크를 통해 처음 들어오더라도 동일하게 1회 노출되도록, 개별 페이지가 아닌 루트에 둔다.
+
+## F6 — 최근 생성 번호 히스토리
+
+### 데이터 모델 & 순수 로직 (`lib/lotto/recentHistory.ts`, 신규)
+
+```ts
+export interface HistoryEntry {
+  numbers: number[];
+  strategy: Strategy;
+  timestamp: number;
+}
+
+export const MAX_HISTORY_ENTRIES = 20;
+
+export function prependEntries(
+  current: HistoryEntry[],
+  newEntries: HistoryEntry[],
+): HistoryEntry[]
+```
+
+`prependEntries`는 새 항목을 배치로 받은 순서 그대로 맨 앞에 붙이고, 기존 항목을 뒤에 이어 붙인 뒤 `MAX_HISTORY_ENTRIES`(20개)를 넘는 오래된 항목을 잘라낸다. DOM/localStorage에 의존하지 않는 순수 함수라 단위테스트로 순서·캡 로직을 검증한다.
+
+### localStorage 연동 (`lib/lotto/useRecentHistory.ts`, 신규)
+
+`lib/lotto/useLatestDraw.ts`와 동일한 클라이언트 훅 패턴. `localStorage` 키 `lotto-recent-history`에 `HistoryEntry[]`를 JSON으로 저장한다. 마운트 시 1회 로드하며, 파싱 실패나 형식이 예상과 다르면 빈 배열로 안전하게 폴백한다(사용자가 만들어낸 첫 localStorage 데이터라 F5의 단순 플래그와 달리 방어적 파싱이 필요하다). `addGames(games, strategy)` 호출 시 `Date.now()`를 공유 타임스탬프로 써서 `prependEntries`를 적용하고, 상태와 localStorage를 함께 갱신한다.
+
+### 적용 지점
+
+`app/generator/page.tsx`의 `handleGenerate`에서 **세트수 모드(F1)일 때만** `addGames`를 호출한다 — 예산 모드(F2, 최대 200게임)를 히스토리에 넣으면 20개 캡이 한 번의 생성으로 즉시 소진되어 의미가 없기 때문이다.
+
+### 화면 (`components/lotto/RecentHistoryList.tsx`, 신규)
+
+`/generator` 페이지 하단에 인라인 섹션으로 배치(모드와 무관하게 항목이 있으면 항상 표시 — 과거 세트수 모드 생성 기록이므로 현재 모드에 좌우되지 않는다). 항목별로 `NumberBall`로 번호를 나열하고, `STRATEGIES`에서 찾은 전략 라벨(찾지 못하면 원본 id로 폴백), `HH:mm` 형식의 생성 시각, 그리고 `GameResultCard`와 동일한 복사 인터랙션(클릭 시 "복사됨"으로 잠시 바뀜)의 복사 버튼을 보여준다. 전체 지우기 기능은 만들지 않는다.
 
 ## 문서 동기화
 

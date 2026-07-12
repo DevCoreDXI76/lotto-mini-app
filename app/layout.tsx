@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { FirstVisitNotice } from "@/components/lotto/FirstVisitNotice";
 import { Footer } from "@/components/lotto/Footer";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -34,6 +35,7 @@ export default function RootLayout({
         <FirstVisitNotice />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

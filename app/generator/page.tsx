@@ -4,6 +4,7 @@ import { useMemo, useState } from 'react';
 import { STRATEGIES, type Strategy, type GeneratedGame } from '@/lib/lotto/types';
 import { generateUniqueGames } from '@/lib/lotto/generate';
 import { normalizeIncluded } from '@/lib/lotto/strategies';
+import { track } from '@vercel/analytics';
 import { loadHistory } from '@/lib/lotto/history';
 import { calcBudgetInfo, ONLINE_LIMIT_WON } from '@/lib/lotto/budget';
 import {
@@ -60,6 +61,7 @@ export default function GeneratorPage() {
   }, [includedInput, excluded]);
 
   function handleGenerate() {
+    track('generate', { mode });
     const gameCount = mode === 'budget' ? budgetInfo.gameCount : count;
     const newGames = generateUniqueGames(strategy, gameCount, excluded, history, Math.random, included);
     setGames(newGames);

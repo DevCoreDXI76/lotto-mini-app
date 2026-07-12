@@ -7,18 +7,21 @@ function botUrl(method: string): string {
 }
 
 export async function sendTelegramMessage(chatId: number, text: string): Promise<void> {
-  await fetch(botUrl('sendMessage'), {
+  const res = await fetch(botUrl('sendMessage'), {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ chat_id: chatId, text }),
   });
+  if (!res.ok) {
+    throw new Error(`Telegram sendMessage failed: ${res.status} ${await res.text()}`);
+  }
 }
 
 export async function sendMiniAppLaunchMessage(chatId: number): Promise<void> {
   const appUrl = process.env.APP_URL;
   if (!appUrl) throw new Error('APP_URL is not set');
 
-  await fetch(botUrl('sendMessage'), {
+  const res = await fetch(botUrl('sendMessage'), {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
@@ -31,4 +34,7 @@ export async function sendMiniAppLaunchMessage(chatId: number): Promise<void> {
       },
     }),
   });
+  if (!res.ok) {
+    throw new Error(`Telegram sendMessage failed: ${res.status} ${await res.text()}`);
+  }
 }

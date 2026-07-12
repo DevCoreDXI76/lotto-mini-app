@@ -14,6 +14,7 @@ import {
 } from '@/lib/lotto/analysis';
 import { getProfileWeights } from '@/lib/lotto/profiles';
 import { useLatestDraw } from '@/lib/lotto/useLatestDraw';
+import { useRecentHistory } from '@/lib/lotto/useRecentHistory';
 import { GameResultCard } from '@/components/lotto/GameResultCard';
 import { Disclaimer } from '@/components/lotto/Disclaimer';
 import { DetailedDisclaimer } from '@/components/lotto/DetailedDisclaimer';
@@ -25,10 +26,12 @@ import { AlgorithmSummaryCard } from '@/components/lotto/AlgorithmSummaryCard';
 import { ActivityChart } from '@/components/lotto/ActivityChart';
 import { CandidatePoolList } from '@/components/lotto/CandidatePoolList';
 import { FinalCandidateCard } from '@/components/lotto/FinalCandidateCard';
+import { RecentHistoryList } from '@/components/lotto/RecentHistoryList';
 
 export default function GeneratorPage() {
   const history = useMemo(() => loadHistory(), []);
   const latest = useLatestDraw();
+  const { entries: recentHistory, addGames } = useRecentHistory();
   const [strategy, setStrategy] = useState<Strategy>('random');
   const [count, setCount] = useState(1);
   const [excludedInput, setExcludedInput] = useState('');
@@ -58,7 +61,11 @@ export default function GeneratorPage() {
 
   function handleGenerate() {
     const gameCount = mode === 'budget' ? budgetInfo.gameCount : count;
-    setGames(generateUniqueGames(strategy, gameCount, excluded, history, Math.random, included));
+    const newGames = generateUniqueGames(strategy, gameCount, excluded, history, Math.random, included);
+    setGames(newGames);
+    if (mode === 'count') {
+      addGames(newGames, strategy);
+    }
   }
 
   const selectedStrategyMeta = STRATEGIES.find((s) => s.id === strategy)!;
@@ -242,6 +249,10 @@ export default function GeneratorPage() {
             <DetailedDisclaimer drawNumber={latest.draw.drawNumber} date={latest.draw.date} />
           )}
         </div>
+      </div>
+
+      <div className="mt-6">
+        <RecentHistoryList entries={recentHistory} />
       </div>
       </div>
     </main>

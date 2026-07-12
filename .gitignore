@@ -43,5 +43,8 @@ next-env.d.ts
 # Notion onboarding (local only)
 .notion/
 
+# Claude Code local settings/worktrees
+.claude/
+
 .vercel
 .env*

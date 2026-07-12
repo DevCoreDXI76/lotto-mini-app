@@ -1,6 +1,6 @@
 # 로또 미니앱 — 기술 아키텍처 & 설계 문서
 
-> 이 문서는 요구사항이 아니라 **기술 설계**를 다룬다. 기능 요구사항/Acceptance Criteria는 [docs/PRD.md](./PRD.md)를, 구현 실행 이력(태스크별 커밋 로그)은 `docs/superpowers/plans/`를 참고한다. 이 문서는 F1(혼합 전략 리치 UI), F3(역대 통계), F5(최초 진입 안내 모달), F6(최근 생성 번호 히스토리)의 아키텍처를 다룬다 — F2는 별도 설계 없이 기존 엔진을 재사용하고, F4/F7/F9~F13은 아직 설계 전이다.
+> 이 문서는 요구사항이 아니라 **기술 설계**를 다룬다. 기능 요구사항/Acceptance Criteria는 [docs/PRD.md](./PRD.md)를, 구현 실행 이력(태스크별 커밋 로그)은 `docs/superpowers/plans/`를 참고한다. 이 문서는 F1(혼합 전략 리치 UI), F3(역대 통계), F5(최초 진입 안내 모달), F6(최근 생성 번호 히스토리), F9(텔레그램 봇 피드백 + 미니앱 진입)의 아키텍처를 다룬다 — F2는 별도 설계 없이 기존 엔진을 재사용하고, F4/F7/F10~F13은 아직 설계 전이다.
 
 ## 공통 파일 구조
 
@@ -144,6 +144,51 @@ export function prependEntries(
 ### 화면 (`components/lotto/RecentHistoryList.tsx`, 신규)
 
 `/generator` 페이지 하단에 인라인 섹션으로 배치(모드와 무관하게 항목이 있으면 항상 표시 — 과거 세트수 모드 생성 기록이므로 현재 모드에 좌우되지 않는다). 항목별로 `NumberBall`로 번호를 나열하고, `STRATEGIES`에서 찾은 전략 라벨(찾지 못하면 원본 id로 폴백), `HH:mm` 형식의 생성 시각, 그리고 `GameResultCard`와 동일한 복사 인터랙션(클릭 시 "복사됨"으로 잠시 바뀜)의 복사 버튼을 보여준다. 전체 지우기 기능은 만들지 않는다.
+
+## F9 — 텔레그램 봇 피드백 + 미니앱 진입
+
+### 검토한 대안: Vercel Chat SDK
+
+멀티플랫폼 챗봇 프레임워크(`chat` + `@chat-adapter/telegram`)를 검토했으나 채택하지 않았다 — 이 프로젝트는 텔레그램 하나만 지원하면 되고, 스레드/구독/모달 같은 상태 관리가 전혀 필요 없는 단방향 요청-응답(메시지 수신 → forward 또는 버튼 전송)뿐이라, SDK가 요구하는 상태 저장소(Redis 등)를 새로 붙이는 비용이 이득보다 크다. 대신 기존 `app/api/lotto/latest/route.ts`와 동일한 순수 fetch 기반 API 라우트 패턴을 그대로 따른다.
+
+### 메시지 분류 (`lib/telegram/webhookLogic.ts`, 신규, 순수 함수)
+
+```ts
+export type WebhookAction =
+  | { type: 'launchMiniApp' }
+  | { type: 'forwardFeedback'; text: string }
+  | { type: 'ignore' };
+
+export function classifyMessage(text: string | undefined): WebhookAction
+```
+
+`/start`(그룹챗에서 붙는 `/start@botname` 접미사 포함)는 `launchMiniApp`, 그 외 `/`로 시작하는 명령어는 `ignore`, 나머지 일반 텍스트는 `forwardFeedback`으로 분류한다. DOM/네트워크에 의존하지 않는 순수 함수라 단위테스트로 분류 규칙을 검증한다.
+
+### Telegram API 래퍼 (`lib/telegram/api.ts`, 신규)
+
+- `sendTelegramMessage(chatId, text)` — 일반 텍스트 전송
+- `sendMiniAppLaunchMessage(chatId)` — `web_app: { url }` 인라인 키보드 버튼("🎲 번호 생성기 열기")이 붙은 환영 메시지 전송. `url`은 `APP_URL` 환경변수 + `/generator`.
+
+두 함수 모두 `TELEGRAM_BOT_TOKEN` 환경변수로 `https://api.telegram.org/bot<TOKEN>/sendMessage`를 호출하는 얇은 fetch 래퍼다.
+
+### 웹훅 라우트 (`app/api/telegram/webhook/route.ts`, 신규)
+
+별도 서버 없이 이미 배포된 이 Vercel 앱에 API 라우트 하나를 추가하는 것만으로 텔레그램이 요구하는 HTTPS 웹훅 엔드포인트가 된다(상태 유지형 연결이 필요 없는 단순 요청-응답이라 서버리스와 궁합이 좋다).
+
+- `X-Telegram-Bot-Api-Secret-Token` 헤더를 `TELEGRAM_WEBHOOK_SECRET` 환경변수와 대조해 검증(불일치 시 401) — 스푸핑된 요청이 관리자 채팅으로 임의 메시지를 forward하지 못하도록 막는다.
+- `classifyMessage` 결과에 따라 분기: `launchMiniApp` → `sendMiniAppLaunchMessage`, `forwardFeedback` → 관리자 채팅(`TELEGRAM_ADMIN_CHAT_ID`)으로 발신자 정보와 함께 forward 후 사용자에게 "의견 감사합니다! 검토 후 반영하겠습니다" 응답, `ignore` → 아무 것도 하지 않음.
+
+### 환경변수
+
+`TELEGRAM_BOT_TOKEN`, `TELEGRAM_ADMIN_CHAT_ID`, `TELEGRAM_WEBHOOK_SECRET`, `APP_URL`(배포된 앱의 기본 URL, 미니앱 버튼 링크 생성용).
+
+### 테스트 & 수동 설정
+
+`classifyMessage`는 `lib/telegram/webhookLogic.test.ts`로 단위테스트한다. 실제 Telegram API 호출과 라우트 자체는 이 프로젝트의 다른 API 라우트와 동일하게 자동테스트 없이 수동 검증한다 — 다만 이번엔 사용자 소유의 실제 봇 토큰이 필요하므로, 배포 후 아래는 사용자가 직접 수행한다:
+
+1. `vercel env add`로 위 4개 환경변수 등록(토큰이 보안값이라 대화 세션에 값이 노출되지 않도록 사용자가 직접 터미널에서 실행)
+2. 배포 후 `setWebhook` API 1회 호출로 웹훅 등록(`secret_token` 파라미터로 위 시크릿 전달)
+3. 실제 텔레그램에서 봇에게 `/start`와 일반 텍스트를 보내 미니앱 버튼과 피드백 forward가 동작하는지 확인
 
 ## 문서 동기화
 

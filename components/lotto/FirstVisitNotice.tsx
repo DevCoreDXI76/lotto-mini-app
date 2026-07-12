@@ -8,7 +8,11 @@ export function FirstVisitNotice() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    // localStorage isn't available during server rendering, so this check can only
+    // happen client-side after mount — the resulting setState is an intentional,
+    // one-time sync with that browser-only API, not a derivable render value.
     if (!localStorage.getItem(STORAGE_KEY)) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setVisible(true);
     }
   }, []);

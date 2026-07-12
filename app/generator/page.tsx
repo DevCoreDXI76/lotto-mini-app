@@ -28,6 +28,7 @@ import { ActivityChart } from '@/components/lotto/ActivityChart';
 import { CandidatePoolList } from '@/components/lotto/CandidatePoolList';
 import { FinalCandidateCard } from '@/components/lotto/FinalCandidateCard';
 import { RecentHistoryList } from '@/components/lotto/RecentHistoryList';
+import { MicroFeedback } from '@/components/lotto/MicroFeedback';
 
 export default function GeneratorPage() {
   const history = useMemo(() => loadHistory(), []);
@@ -221,6 +222,7 @@ export default function GeneratorPage() {
                 </button>
               )}
               <Disclaimer />
+              <MicroFeedback />
             </div>
           )}
 

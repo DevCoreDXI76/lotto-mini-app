@@ -13,6 +13,12 @@ export class KakaoRateLimitError extends Error {
   }
 }
 
+export class KakaoAuthError extends Error {
+  constructor(status: number) {
+    super(`KAKAO_AUTH_ERROR_${status}`);
+  }
+}
+
 export async function geocodeAddress(address: string): Promise<Coordinates | null> {
   const apiKey = process.env.KAKAO_REST_API_KEY;
   if (!apiKey) throw new Error('KAKAO_REST_API_KEY is not set');
@@ -24,6 +30,9 @@ export async function geocodeAddress(address: string): Promise<Coordinates | nul
 
   if (res.status === 429) {
     throw new KakaoRateLimitError();
+  }
+  if (res.status === 401 || res.status === 403) {
+    throw new KakaoAuthError(res.status);
   }
   if (!res.ok) {
     console.warn(`geocode failed (${res.status}): ${address}`);

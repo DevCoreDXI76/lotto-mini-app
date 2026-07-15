@@ -4,7 +4,7 @@
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { parseCsvRows, csvRowsToObjects } from '../lib/stores/parseCsv';
-import { geocodeAddress, KakaoRateLimitError, type Coordinates } from './geocode-kakao';
+import { geocodeAddress, KakaoRateLimitError, KakaoAuthError, type Coordinates } from './geocode-kakao';
 
 const RAW_DIR = join(process.cwd(), 'data', 'raw');
 const ADDRESS_CSV = join(RAW_DIR, 'store-addresses.csv');
@@ -66,6 +66,14 @@ async function main() {
     } catch (err) {
       if (err instanceof KakaoRateLimitError) {
         console.warn(`quota exhausted after ${processed} requests this run — saving progress and stopping`);
+        saveCache(cache);
+        console.log(`done (partial): ${succeeded} succeeded, ${failed} failed, ${processed} attempted this run`);
+        return;
+      }
+      if (err instanceof KakaoAuthError) {
+        console.error(
+          `Kakao API authentication failed (${err.message}) — check that KAKAO_REST_API_KEY in .env is the REST API key (not Admin/JavaScript key), and that the 카카오맵 product is enabled for the Kakao app. Saving progress and stopping without marking this address as failed.`,
+        );
         saveCache(cache);
         console.log(`done (partial): ${succeeded} succeeded, ${failed} failed, ${processed} attempted this run`);
         return;

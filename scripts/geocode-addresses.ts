@@ -41,52 +41,57 @@ async function main() {
   let succeeded = 0;
   let failed = 0;
 
-  for (const row of rows) {
-    if (processed >= limit) break;
+  // A finally here guarantees saveCache runs on every exit path — normal
+  // completion, an early return (rate limit/auth error), or an uncaught
+  // error propagating out — so an unexpected network failure mid-batch
+  // never discards progress made since the last periodic checkpoint.
+  try {
+    for (const row of rows) {
+      if (processed >= limit) break;
 
-    const roadAddress = row['도로명주소'];
-    const jibunAddress = row['지번주소'];
-    if (!roadAddress) continue;
-    if (roadAddress in cache) continue;
+      const roadAddress = row['도로명주소'];
+      const jibunAddress = row['지번주소'];
+      if (!roadAddress) continue;
+      if (roadAddress in cache) continue;
 
-    processed += 1;
+      processed += 1;
 
-    try {
-      let coords = await geocodeAddress(roadAddress);
-      if (!coords && jibunAddress) {
-        coords = await geocodeAddress(jibunAddress);
+      try {
+        let coords = await geocodeAddress(roadAddress);
+        if (!coords && jibunAddress) {
+          coords = await geocodeAddress(jibunAddress);
+        }
+        cache[roadAddress] = coords;
+        if (coords) {
+          succeeded += 1;
+          console.log(`[${processed}] ok: ${roadAddress}`);
+        } else {
+          failed += 1;
+          console.warn(`[${processed}] no result: ${roadAddress}`);
+        }
+      } catch (err) {
+        if (err instanceof KakaoRateLimitError) {
+          console.warn(`quota exhausted after ${processed} requests this run — saving progress and stopping`);
+          console.log(`done (partial): ${succeeded} succeeded, ${failed} failed, ${processed} attempted this run`);
+          return;
+        }
+        if (err instanceof KakaoAuthError) {
+          console.error(
+            `Kakao API authentication failed (${err.message}) — check that KAKAO_REST_API_KEY in .env is the REST API key (not Admin/JavaScript key), and that the 카카오맵 product is enabled for the Kakao app. Saving progress and stopping without marking this address as failed.`,
+          );
+          console.log(`done (partial): ${succeeded} succeeded, ${failed} failed, ${processed} attempted this run`);
+          return;
+        }
+        throw err;
       }
-      cache[roadAddress] = coords;
-      if (coords) {
-        succeeded += 1;
-        console.log(`[${processed}] ok: ${roadAddress}`);
-      } else {
-        failed += 1;
-        console.warn(`[${processed}] no result: ${roadAddress}`);
-      }
-    } catch (err) {
-      if (err instanceof KakaoRateLimitError) {
-        console.warn(`quota exhausted after ${processed} requests this run — saving progress and stopping`);
-        saveCache(cache);
-        console.log(`done (partial): ${succeeded} succeeded, ${failed} failed, ${processed} attempted this run`);
-        return;
-      }
-      if (err instanceof KakaoAuthError) {
-        console.error(
-          `Kakao API authentication failed (${err.message}) — check that KAKAO_REST_API_KEY in .env is the REST API key (not Admin/JavaScript key), and that the 카카오맵 product is enabled for the Kakao app. Saving progress and stopping without marking this address as failed.`,
-        );
-        saveCache(cache);
-        console.log(`done (partial): ${succeeded} succeeded, ${failed} failed, ${processed} attempted this run`);
-        return;
-      }
-      throw err;
+
+      if (processed % 50 === 0) saveCache(cache);
+      await new Promise((r) => setTimeout(r, 100));
     }
-
-    if (processed % 50 === 0) saveCache(cache);
-    await new Promise((r) => setTimeout(r, 100));
+  } finally {
+    saveCache(cache);
   }
 
-  saveCache(cache);
   console.log(`done: ${succeeded} succeeded, ${failed} failed, ${processed} attempted this run`);
 }
 

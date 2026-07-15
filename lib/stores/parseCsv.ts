@@ -7,6 +7,10 @@ export function parseCsvRows(text: string): string[][] {
   let i = 0;
   const len = text.length;
 
+  function isRealRow(): boolean {
+    return row.length > 0 || field.length > 0 || fieldTouched;
+  }
+
   while (i < len) {
     const char = text[i];
 
@@ -44,8 +48,10 @@ export function parseCsvRows(text: string): string[][] {
       continue;
     }
     if (char === '\n') {
-      row.push(field);
-      rows.push(row);
+      if (isRealRow()) {
+        row.push(field);
+        rows.push(row);
+      }
       row = [];
       field = '';
       fieldTouched = false;
@@ -56,10 +62,7 @@ export function parseCsvRows(text: string): string[][] {
     i += 1;
   }
 
-  const endsWithNewline =
-    len > 0 && (text[len - 1] === '\n' || (text[len - 1] === '\r' && text[len - 2] === '\n'));
-
-  if (!endsWithNewline && (field.length > 0 || row.length > 0 || fieldTouched)) {
+  if (isRealRow()) {
     row.push(field);
     rows.push(row);
   }

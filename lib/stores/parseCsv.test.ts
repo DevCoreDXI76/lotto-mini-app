@@ -37,6 +37,20 @@ describe('parseCsvRows', () => {
   it('does not drop a final row that is a single empty quoted field with no trailing newline', () => {
     expect(parseCsvRows('name\n""')).toEqual([['name'], ['']]);
   });
+
+  it('ignores a genuine trailing blank line (two newlines at EOF), not just line termination', () => {
+    expect(parseCsvRows('a,b\n1,2\n\n')).toEqual([
+      ['a', 'b'],
+      ['1', '2'],
+    ]);
+  });
+
+  it('ignores a genuine blank line in the middle of the input', () => {
+    expect(parseCsvRows('a,b\n\n1,2')).toEqual([
+      ['a', 'b'],
+      ['1', '2'],
+    ]);
+  });
 });
 
 describe('csvRowsToObjects', () => {

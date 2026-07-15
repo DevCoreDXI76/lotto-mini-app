@@ -200,6 +200,14 @@ export function classifyMessage(text: string | undefined): WebhookAction
 
 Windows(Git Bash)에서 `curl -d`로 한글 payload를 직접 넘기면 쉘 인코딩 문제로 `"menu button text must be encoded in UTF-8"` 400 에러가 난다 — UTF-8로 저장한 JSON 파일을 `--data-binary @file.json`으로 넘기면 해결된다. `TELEGRAM_BOT_TOKEN`이 재발급되거나 `APP_URL`이 바뀌면 이 호출을 다시 실행해야 한다(웹훅 등록과 별개의 설정이라 자동으로 갱신되지 않는다).
 
+### Direct Link Mini App (`/newapp`)
+
+채팅방 진입 없이 링크 클릭만으로 미니앱이 즉시 열리도록, BotFather의 `/newapp`으로 Direct Link Mini App을 등록했다(Bot API로는 불가능 — 봇 소유자가 BotFather와 직접 대화해야 하는 절차). Title/Description/Photo(`docs/assets/telegram-miniapp-banner.png`, 640×360)/Web App URL(`<APP_URL>/generator`)을 입력해 short name `app`을 발급받았다.
+
+**공유용 최종 링크:** `https://t.me/lotto_mini_bot/app` — 클릭 시 채팅 화면 없이 미니앱이 바로 전체화면으로 열린다.
+
+이 절차는 `/newbot`(완전히 새로운 봇 생성)과 헷갈리기 쉽다 — 반드시 `/newapp`을 사용해야 기존 `lotto_mini_bot`에 앱이 연결된다.
+
 ## 문서 동기화
 
 Notion Documents DB와 동기화되는 파일은 `docs/PRD.md`, `docs/superpowers/plans/2026-07-10-f1-rich-ui-redesign.md`(plan) 두 개뿐이며 매핑은 `.notion/scripts/sync_notion_documents.py`의 `export_markdown()`에 있다. `docs/PLAN.md`, `docs/PRD.md`(구버전)처럼 루트에 별도 사본을 두지 않고 실제 원본 경로를 직접 가리킨다 — 사본이 새 버전과 어긋나는 문제를 근본적으로 없애기 위함.

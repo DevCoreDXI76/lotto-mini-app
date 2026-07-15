@@ -4,7 +4,8 @@
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { parseCsvRows, csvRowsToObjects } from '../lib/stores/parseCsv';
-import { geocodeAddress, KakaoRateLimitError, KakaoAuthError, type Coordinates } from './geocode-kakao';
+import { geocodeAddress, KakaoRateLimitError, KakaoAuthError } from './geocode-kakao';
+import type { Coordinates } from '../lib/stores/types';
 
 const RAW_DIR = join(process.cwd(), 'data', 'raw');
 const ADDRESS_CSV = join(RAW_DIR, 'store-addresses.csv');

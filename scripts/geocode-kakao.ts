@@ -1,9 +1,6 @@
 // Kakao 주소검색(지오코딩) REST API 얇은 래퍼.
 // https://developers.kakao.com/docs/latest/ko/local/dev-guide#address-coord
-export interface Coordinates {
-  lat: number;
-  lng: number;
-}
+import type { Coordinates } from '../lib/stores/types';
 
 const KAKAO_ADDRESS_SEARCH_URL = 'https://dapi.kakao.com/v2/local/search/address.json';
 

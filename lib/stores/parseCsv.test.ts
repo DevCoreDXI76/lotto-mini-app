@@ -33,6 +33,10 @@ describe('parseCsvRows', () => {
       ['1', '2'],
     ]);
   });
+
+  it('does not drop a final row that is a single empty quoted field with no trailing newline', () => {
+    expect(parseCsvRows('name\n""')).toEqual([['name'], ['']]);
+  });
 });
 
 describe('csvRowsToObjects', () => {

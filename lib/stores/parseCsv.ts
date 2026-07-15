@@ -3,6 +3,7 @@ export function parseCsvRows(text: string): string[][] {
   let row: string[] = [];
   let field = '';
   let inQuotes = false;
+  let fieldTouched = false;
   let i = 0;
   const len = text.length;
 
@@ -27,12 +28,14 @@ export function parseCsvRows(text: string): string[][] {
 
     if (char === '"') {
       inQuotes = true;
+      fieldTouched = true;
       i += 1;
       continue;
     }
     if (char === ',') {
       row.push(field);
       field = '';
+      fieldTouched = false;
       i += 1;
       continue;
     }
@@ -45,6 +48,7 @@ export function parseCsvRows(text: string): string[][] {
       rows.push(row);
       row = [];
       field = '';
+      fieldTouched = false;
       i += 1;
       continue;
     }
@@ -52,12 +56,15 @@ export function parseCsvRows(text: string): string[][] {
     i += 1;
   }
 
-  if (field.length > 0 || row.length > 0) {
+  const endsWithNewline =
+    len > 0 && (text[len - 1] === '\n' || (text[len - 1] === '\r' && text[len - 2] === '\n'));
+
+  if (!endsWithNewline && (field.length > 0 || row.length > 0 || fieldTouched)) {
     row.push(field);
     rows.push(row);
   }
 
-  return rows.filter((r) => !(r.length === 1 && r[0] === ''));
+  return rows;
 }
 
 export function csvRowsToObjects(rows: string[][]): Record<string, string>[] {

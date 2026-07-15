@@ -1,0 +1,2770 @@
+[
+  {
+    "name": "꽃길복권방",
+    "roadAddress": "서울 강북구 덕릉로 140",
+    "jibunAddress": "서울 강북구 번2동 437-10번지",
+    "lat": 37.6349642960559,
+    "lng": 127.029438273509,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "다모아",
+    "roadAddress": "서울 구로구 공원로6나길 39-1",
+    "jibunAddress": "서울 구로구 구로동 29-21",
+    "lat": 37.5044721086261,
+    "lng": 126.89179540724,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "다모아복권명당",
+    "roadAddress": "서울 구로구 서해안로30길 13-7",
+    "jibunAddress": "서울 구로구 오류동 137-46번지",
+    "lat": 37.4933156575955,
+    "lng": 126.844340293318,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "다모아복권",
+    "roadAddress": "서울 구로구 경인로19길 4",
+    "jibunAddress": "서울 구로구 오류동 315-14번지",
+    "lat": 37.4959162824183,
+    "lng": 126.842813698497,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "팡팡복권방",
+    "roadAddress": "서울 중구 퇴계로6길 5",
+    "jibunAddress": "서울 중구 회현동1가 194-11번지",
+    "lat": 37.5579914099627,
+    "lng": 126.978360631417,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "노다지복권방",
+    "roadAddress": "서울 성북구 화랑로13길 20",
+    "jibunAddress": "서울 성북구 하월곡동 21-103번지",
+    "lat": 37.6043413280808,
+    "lng": 127.042495289653,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "한경종합광고",
+    "roadAddress": "서울 송파구 백제고분로 198 정민빌딩",
+    "jibunAddress": "서울 송파구 삼전동 28-8",
+    "lat": 37.5039376838599,
+    "lng": 127.088561618297,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "하이로또",
+    "roadAddress": "서울 금천구 금하로 686",
+    "jibunAddress": "서울 금천구 시흥동 908-2",
+    "lat": 37.4519003029052,
+    "lng": 126.906355229868,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "대박찬스",
+    "roadAddress": "서울 강북구 솔매로 105-1",
+    "jibunAddress": "서울 강북구 미아동 224-58번지",
+    "lat": 37.6257967298908,
+    "lng": 127.0240107013,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권방",
+    "roadAddress": "서울 구로구 도림로 55-1",
+    "jibunAddress": "서울 구로구 구로4동 767-182번지",
+    "lat": 37.4888067522605,
+    "lng": 126.890026257335,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권",
+    "roadAddress": "서울 중구 을지로 지하 58",
+    "jibunAddress": "서울 중구 을지로2가 9-7번지",
+    "lat": 37.5661185760891,
+    "lng": 126.983988779154,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "행운마트",
+    "roadAddress": "서울 중구 마른내로 54-1",
+    "jibunAddress": "서울 중구 인현동1가 97-2번지",
+    "lat": 37.5642242572706,
+    "lng": 126.993870604152,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "대지사",
+    "roadAddress": "서울 성동구 왕십리로 362",
+    "jibunAddress": "서울 성동구 도선동 363-1",
+    "lat": 37.5643455824282,
+    "lng": 127.030315957145,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "넘보원 마트",
+    "roadAddress": "서울 도봉구 도봉로165길 2",
+    "jibunAddress": "서울 도봉구 도봉동 596-24",
+    "lat": 37.6777263387055,
+    "lng": 127.044676759227,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "수연식품(대박찬스)",
+    "roadAddress": "서울 중랑구 면목로48길 11",
+    "jibunAddress": "서울 중랑구 면목동 458-120번지",
+    "lat": 37.5822885808998,
+    "lng": 127.089395558933,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권",
+    "roadAddress": "서울 중랑구 망우로30길 8",
+    "jibunAddress": "서울 중랑구 상봉동 136-50번지",
+    "lat": 37.5928619662699,
+    "lng": 127.07437556869,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권나라",
+    "roadAddress": "서울 송파구 백제고분로32길 23",
+    "jibunAddress": "서울 송파구 삼전동 175번지",
+    "lat": 37.5003571126309,
+    "lng": 127.095023316989,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "코사마트독산점",
+    "roadAddress": "서울 금천구 독산로75길 15",
+    "jibunAddress": "서울 금천구 독산동 1018-26",
+    "lat": 37.4689024071813,
+    "lng": 126.901492066524,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "코사마트 평창점",
+    "roadAddress": "서울 종로구 평창11길 5",
+    "jibunAddress": "서울 종로구 평창동 339번지",
+    "lat": 37.606258316294,
+    "lng": 126.9666022614,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "코사마트",
+    "roadAddress": "서울 구로구 공원로 35",
+    "jibunAddress": "서울 구로구 구로5동 108-2번지",
+    "lat": 37.5001619663469,
+    "lng": 126.890520884986,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "신림용꿈돼지꿈",
+    "roadAddress": "서울 관악구 남부순환로 1869",
+    "jibunAddress": "서울 관악구 봉천동 1673-16",
+    "lat": 37.4798286976066,
+    "lng": 126.957564468163,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "산성슈퍼",
+    "roadAddress": "서울 송파구 성내천로63길 6",
+    "jibunAddress": "서울 송파구 거여동 577",
+    "lat": 37.4903388692437,
+    "lng": 127.15725704504,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권명당",
+    "roadAddress": "서울 관악구 장군봉1길 43",
+    "jibunAddress": "서울 관악구 봉천동 927-20",
+    "lat": 37.4817211799712,
+    "lng": 126.942452315018,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권세계",
+    "roadAddress": "서울 구로구 우마길 4",
+    "jibunAddress": "서울 구로구 가리봉동 124-2번지",
+    "lat": 37.4823291157412,
+    "lng": 126.887421511003,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "히딩크복권방",
+    "roadAddress": "서울 광진구 자양로13길 62",
+    "jibunAddress": "서울 광진구 자양동 623-28번지",
+    "lat": 37.5338986164114,
+    "lng": 127.081205436048,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "영광생활유통",
+    "roadAddress": "서울 금천구 범안로 1186",
+    "jibunAddress": "서울 금천구 독산동 1006-19",
+    "lat": 37.4662597058058,
+    "lng": 126.89345328049,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권만화",
+    "roadAddress": "서울 서초구 사임당로 39",
+    "jibunAddress": "서울 서초구 서초동 1578-5",
+    "lat": 37.4884189352008,
+    "lng": 127.014095010132,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "하이로또복권방",
+    "roadAddress": "서울 중구 청구로14길 3",
+    "jibunAddress": "서울 중구 신당동 387-60번지",
+    "lat": 37.5611443009298,
+    "lng": 127.011896783801,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "대박복권방",
+    "roadAddress": "서울 중구 퇴계로 398",
+    "jibunAddress": "서울 중구 무학동 11-2번지",
+    "lat": 37.5650587607729,
+    "lng": 127.015815518517,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "행운복권방",
+    "roadAddress": "서울 중구 다산로35길 11",
+    "jibunAddress": "서울 중구 신당동 241-5번지",
+    "lat": 37.563539806566,
+    "lng": 127.014848931952,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "짱복권",
+    "roadAddress": "서울 종로구 종로 269",
+    "jibunAddress": "서울 종로구 종로6가 93-1",
+    "lat": 37.5713285037844,
+    "lng": 127.00789744198,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "주택복권사랑방",
+    "roadAddress": "서울 구로구 경인로53길 15",
+    "jibunAddress": "서울 구로구 구로동 1258번지",
+    "lat": 37.5020321024364,
+    "lng": 126.876117278882,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권마을",
+    "roadAddress": "서울 구로구 구로동로 72",
+    "jibunAddress": "서울 구로구 구로4동 805-20번지",
+    "lat": 37.485330400008,
+    "lng": 126.886039054657,
+    "firstPrizeAutoCount": 1
+  },
+  {
+    "name": "복권명가",
+    "roadAddress": "서울 구로구 개봉로 26",
+    "jibunAddress": "서울 구로구 개봉동 403-165번지",
+    "lat": 37.4880063670866,
+    "lng": 126.856494843704,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "노다지복권방",
+    "roadAddress": "서울 동대문구 한빛로 1-1",
+    "jibunAddress": "서울 동대문구 신설동 84-1번지",
+    "lat": 37.5763302856205,
+    "lng": 127.023939791577,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "노다지 노원역점 복권방",
+    "roadAddress": "서울 노원구 상계로 78",
+    "jibunAddress": "서울 노원구 상계동 340-1번지",
+    "lat": 37.6562275670719,
+    "lng": 127.063748675774,
+    "firstPrizeAutoCount": 1
+  },
+  {
+    "name": "복권방(천하명당)",
+    "roadAddress": "서울 성동구 행당로 75",
+    "jibunAddress": "서울 성동구 행당동 347번지",
+    "lat": 37.556602469483,
+    "lng": 127.027520677046,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권클럽",
+    "roadAddress": "서울 성동구 독서당로 318",
+    "jibunAddress": "서울 성동구 금호동4가 147",
+    "lat": 37.5479763990306,
+    "lng": 127.024254477371,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "신성사",
+    "roadAddress": "서울 영등포구 신길로 63",
+    "jibunAddress": "서울 영등포구 신길동 448-3",
+    "lat": 37.4982579220255,
+    "lng": 126.908016067029,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "행운의사랑방",
+    "roadAddress": "서울 영등포구 도림로 465",
+    "jibunAddress": "서울 영등포구 문래동4가 6-1번지",
+    "lat": 37.515717798064,
+    "lng": 126.891583825937,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "왕대박",
+    "roadAddress": "서울 영등포구 영등포로84길 12",
+    "jibunAddress": "서울 영등포구 신길동 73-12",
+    "lat": 37.5123183244038,
+    "lng": 126.921830473524,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권마을",
+    "roadAddress": "서울 영등포구 가마산로 421-2",
+    "jibunAddress": "서울 영등포구 신길동 347-220번지",
+    "lat": 37.5046099965256,
+    "lng": 126.903590610576,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권천국",
+    "roadAddress": "서울 서초구 서초대로 97",
+    "jibunAddress": "서울 서초구 방배4동 874-7번지",
+    "lat": 37.48770758374,
+    "lng": 126.992859786919,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "천하명당복권방",
+    "roadAddress": "서울 은평구 은평로 51",
+    "jibunAddress": "서울 은평구 신사동 3-11번지",
+    "lat": 37.5987765175333,
+    "lng": 126.913456457034,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "행운복권방",
+    "roadAddress": "서울 은평구 연서로 258",
+    "jibunAddress": "서울 은평구 불광동 320-1",
+    "lat": 37.6198100033795,
+    "lng": 126.923335802805,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권전문점",
+    "roadAddress": "서울 도봉구 도당로 123-1",
+    "jibunAddress": "서울 도봉구 방학1동 658-27번지",
+    "lat": 37.667494168341,
+    "lng": 127.039946024184,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "나눔",
+    "roadAddress": "서울 도봉구 도당로13길 34",
+    "jibunAddress": "서울 도봉구 방학동 634번지",
+    "lat": 37.6661480011326,
+    "lng": 127.034870789388,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "캐논종합",
+    "roadAddress": "서울 용산구 새창로 156",
+    "jibunAddress": "서울 용산구 신계동 36-14",
+    "lat": 37.5337555071395,
+    "lng": 126.962464031928,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "노다지복권방",
+    "roadAddress": "서울 양천구 월정로 137",
+    "jibunAddress": "서울 양천구 신월1동 116-14번지",
+    "lat": 37.5311741321708,
+    "lng": 126.837469383438,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권천국",
+    "roadAddress": "서울 강서구 방화대로33길 66",
+    "jibunAddress": "서울 강서구 방화동 249-110번지",
+    "lat": 37.56825895546,
+    "lng": 126.812965835724,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권마을",
+    "roadAddress": "서울 강서구 화곡로 321",
+    "jibunAddress": "서울 강서구 화곡동 1105",
+    "lat": 37.5529285304187,
+    "lng": 126.850251153324,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "아그네스",
+    "roadAddress": "서울 강서구 방화동로 43",
+    "jibunAddress": "서울 강서구 방화동 614-18",
+    "lat": 37.5646071542253,
+    "lng": 126.811111114745,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권나라",
+    "roadAddress": "서울 중랑구 봉화산로 30",
+    "jibunAddress": "서울 중랑구 중화동 312-1번지",
+    "lat": 37.6014405004367,
+    "lng": 127.077566914738,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "은혜",
+    "roadAddress": "서울 중랑구 면목로91길 46",
+    "jibunAddress": "서울 중랑구 상봉동 112-51번지",
+    "lat": 37.594102330111,
+    "lng": 127.083451429661,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권명당",
+    "roadAddress": "서울 중랑구 면목로 362",
+    "jibunAddress": "서울 중랑구 면목동 413-3번지",
+    "lat": 37.58426345756,
+    "lng": 127.088572342579,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권방",
+    "roadAddress": "서울 마포구 백범로 127",
+    "jibunAddress": "서울 마포구 염리동 154-10번지",
+    "lat": 37.5465765720018,
+    "lng": 126.945412775474,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권천국방",
+    "roadAddress": "서울 마포구 동교로 92",
+    "jibunAddress": "서울 마포구 서교동 480-1번지",
+    "lat": 37.5542374342588,
+    "lng": 126.912399133958,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권백화점",
+    "roadAddress": "서울 마포구 월드컵로 157",
+    "jibunAddress": "서울 마포구 망원동 474-2번지",
+    "lat": 37.5616066470656,
+    "lng": 126.904781124598,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "한삼인 홍제역점",
+    "roadAddress": "서울 서대문구 통일로 457",
+    "jibunAddress": "서울 서대문구 홍제동 330-60번지",
+    "lat": 37.5892089495076,
+    "lng": 126.94324160002,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권마트",
+    "roadAddress": "서울 서대문구 세검정로 31",
+    "jibunAddress": "서울 서대문구 홍제동 265-5번지",
+    "lat": 37.5919699391672,
+    "lng": 126.944930799279,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "행운복권방",
+    "roadAddress": "서울 서대문구 신촌로 235-1",
+    "jibunAddress": "서울 서대문구 북아현동 220-43",
+    "lat": 37.5574090991053,
+    "lng": 126.952293916565,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "노다지복권방",
+    "roadAddress": "서울 서대문구 충정로 73",
+    "jibunAddress": "서울 서대문구 충정로2가 124",
+    "lat": 37.5653149304174,
+    "lng": 126.96592568593,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권세계",
+    "roadAddress": "서울 동작구 신대방길 8",
+    "jibunAddress": "서울 동작구 신대방동 618-26번지",
+    "lat": 37.4879242988106,
+    "lng": 126.912193044847,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권명당",
+    "roadAddress": "서울 동작구 국사봉길 26",
+    "jibunAddress": "서울 동작구 신대방동 338-19",
+    "lat": 37.4981091737714,
+    "lng": 126.929214924309,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "뉴현대칼라",
+    "roadAddress": "서울 동작구 상도로 143 송암빌딩",
+    "jibunAddress": "서울 동작구 상도동 191-1",
+    "lat": 37.5028598563155,
+    "lng": 126.935415789527,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권나라",
+    "roadAddress": "서울 동작구 성대로 42 소망교회",
+    "jibunAddress": "서울 동작구 상도동 256-42",
+    "lat": 37.4988444814987,
+    "lng": 126.933392487301,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권방",
+    "roadAddress": "서울 강동구 천호대로176길 10-3",
+    "jibunAddress": "서울 강동구 성내동 245-32번지",
+    "lat": 37.5338400278576,
+    "lng": 127.136077793718,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "단골집편의점",
+    "roadAddress": "서울 강동구 구천면로 194",
+    "jibunAddress": "서울 강동구 천호동 417-7",
+    "lat": 37.5405895135206,
+    "lng": 127.126257139708,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "포인트",
+    "roadAddress": "서울 강동구 올림픽로 677",
+    "jibunAddress": "서울 강동구 천호동 354-5",
+    "lat": 37.5419953843113,
+    "lng": 127.124349828032,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "삼정그린환경",
+    "roadAddress": "서울 강동구 양재대로 1355",
+    "jibunAddress": "서울 강동구 성내3동 428-5번지",
+    "lat": 37.5273952498819,
+    "lng": 127.135616051172,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복드림복권방",
+    "roadAddress": "서울 강동구 상암로 99",
+    "jibunAddress": "서울 강동구 암사1동 488-34번지",
+    "lat": 37.5474917458973,
+    "lng": 127.133987509556,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "하늘담 복권",
+    "roadAddress": "서울 금천구 시흥대로 97 시흥유통상가",
+    "jibunAddress": "서울 금천구 시흥동 984",
+    "lat": 37.4446821230267,
+    "lng": 126.901072369386,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권방",
+    "roadAddress": "서울 금천구 시흥대로 90 정송빌딩",
+    "jibunAddress": "서울 금천구 시흥동 954-7",
+    "lat": 37.4421106539978,
+    "lng": 126.903944207738,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "행운으뜸",
+    "roadAddress": "서울 관악구 신림로17길 45",
+    "jibunAddress": "서울 관악구 신림동 1537-14",
+    "lat": 37.4686866288586,
+    "lng": 126.936467443039,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "대풍",
+    "roadAddress": "서울 관악구 조원로 116",
+    "jibunAddress": "서울 관악구 신림동 513-1",
+    "lat": 37.4849671764692,
+    "lng": 126.915258131988,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "로또담배",
+    "roadAddress": "서울 관악구 난곡로 82",
+    "jibunAddress": "서울 관악구 신림동 667-36",
+    "lat": 37.4627368976892,
+    "lng": 126.919213738918,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권나라",
+    "roadAddress": "서울 관악구 남부순환로 1739-9",
+    "jibunAddress": "서울 관악구 봉천동 926-25",
+    "lat": 37.4828013647636,
+    "lng": 126.943500830574,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "천하명당",
+    "roadAddress": "서울 관악구 난우길 18",
+    "jibunAddress": "서울 관악구 신림동 608-34",
+    "lat": 37.4745871961151,
+    "lng": 126.918725717854,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "대박복권방",
+    "roadAddress": "서울 금천구 독산로64길 18",
+    "jibunAddress": "서울 금천구 독산동 378-235",
+    "lat": 37.4650756285622,
+    "lng": 126.903671353357,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "천하명당복권방독산점",
+    "roadAddress": "서울 금천구 독산로85길 16",
+    "jibunAddress": "서울 금천구 독산동 989-16",
+    "lat": 37.4725320231091,
+    "lng": 126.902234890915,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권나라",
+    "roadAddress": "서울 관악구 은천로 40-1",
+    "jibunAddress": "서울 관악구 봉천동 941-18",
+    "lat": 37.4860180512095,
+    "lng": 126.939843355048,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "주택복권사랑방",
+    "roadAddress": "서울 관악구 난곡로 363-1",
+    "jibunAddress": "서울 관악구 신림동 518-11",
+    "lat": 37.4864371159699,
+    "lng": 126.913442051154,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "대박복권방",
+    "roadAddress": "서울 성북구 돌곶이로 60",
+    "jibunAddress": "서울 성북구 석관동 250-10번지",
+    "lat": 37.6092110228425,
+    "lng": 127.058990218645,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권명당",
+    "roadAddress": "서울 광진구 영화사로 59",
+    "jibunAddress": "서울 광진구 중곡동 107-43",
+    "lat": 37.5552916204458,
+    "lng": 127.092995250314,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권방",
+    "roadAddress": "서울 광진구 자양로18길 34",
+    "jibunAddress": "서울 광진구 구의1동 246-70번지",
+    "lat": 37.5377825275173,
+    "lng": 127.085463281895,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "천하명당복권방",
+    "roadAddress": "서울 광진구 능동로 413",
+    "jibunAddress": "서울 광진구 중곡3동 167-3번지",
+    "lat": 37.5659553815587,
+    "lng": 127.084082742943,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "대원복권방",
+    "roadAddress": "서울 광진구 답십리로 382",
+    "jibunAddress": "서울 광진구 중곡동 561-2번지",
+    "lat": 37.5713112997234,
+    "lng": 127.082877665558,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "행운의집",
+    "roadAddress": "서울 광진구 능동로19길 7",
+    "jibunAddress": "서울 광진구 화양동 111-114",
+    "lat": 37.5469195898615,
+    "lng": 127.073364979703,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "천하명당",
+    "roadAddress": "서울 송파구 백제고분로40길 31",
+    "jibunAddress": "서울 송파구 석촌동 294-5번지",
+    "lat": 37.5020166910285,
+    "lng": 127.107907121544,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "럭키복권샵",
+    "roadAddress": "서울 송파구 성내천로 218",
+    "jibunAddress": "서울 송파구 마천동 77-9번지",
+    "lat": 37.499655587349,
+    "lng": 127.151710114835,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "명지복권방",
+    "roadAddress": "서울 송파구 거마로 55",
+    "jibunAddress": "서울 송파구 거여1동 133-82번지",
+    "lat": 37.4978508169634,
+    "lng": 127.146253556315,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "천하명당복권방",
+    "roadAddress": "서울 송파구 백제고분로41길 7",
+    "jibunAddress": "서울 송파구 송파1동 18-18번지",
+    "lat": 37.5068174105631,
+    "lng": 127.108219513956,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "광림마트",
+    "roadAddress": "서울 강남구 도곡로 213 마고빌딩",
+    "jibunAddress": "서울 강남구 역삼동 788-35",
+    "lat": 37.493074807122,
+    "lng": 127.042103900522,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "강남상회",
+    "roadAddress": "서울 강남구 봉은사로 179 H타워",
+    "jibunAddress": "서울 강남구 논현동 192-19",
+    "lat": 37.5074604391987,
+    "lng": 127.033395973437,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "달랑슈퍼",
+    "roadAddress": "서울 강남구 삼성로82길 22",
+    "jibunAddress": "서울 강남구 대치동 955-1",
+    "lat": 37.5052741434448,
+    "lng": 127.059528001861,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "다온 편의점",
+    "roadAddress": "서울 강북구 오현로 190",
+    "jibunAddress": "서울 강북구 번동 306-11",
+    "lat": 37.6284742878356,
+    "lng": 127.039410708924,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "보경식품",
+    "roadAddress": "서울 강북구 도봉로 211",
+    "jibunAddress": "서울 강북구 미아동 207-2",
+    "lat": 37.6275050669958,
+    "lng": 127.025415047869,
+    "firstPrizeAutoCount": 1
+  },
+  {
+    "name": "약수마트(구 동호슈퍼)",
+    "roadAddress": "서울 중구 동호로 163",
+    "jibunAddress": "서울 중구 신당동 372-31번지",
+    "lat": 37.552952089851,
+    "lng": 127.011720408113,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "하나더마트",
+    "roadAddress": "서울 중구 퇴계로90길 22",
+    "jibunAddress": "서울 중구 신당동 152-7번지",
+    "lat": 37.5643905965647,
+    "lng": 127.021925092137,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "하임마트",
+    "roadAddress": "서울 중구 퇴계로 439-4",
+    "jibunAddress": "서울 중구 황학동 714번지",
+    "lat": 37.5659171786499,
+    "lng": 127.02079466631,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "을지상회",
+    "roadAddress": "서울 중구 장충단로13길 43",
+    "jibunAddress": "서울 중구 을지로6가 18-188번지",
+    "lat": 37.5680943778524,
+    "lng": 127.006460574612,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "로또복권방",
+    "roadAddress": "서울 중구 마른내로 21",
+    "jibunAddress": "서울 중구 저동2가 17-1번지",
+    "lat": 37.5649540028292,
+    "lng": 126.990272872081,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "남산골",
+    "roadAddress": "서울 중구 퇴계로 222-1",
+    "jibunAddress": "서울 중구 필동2가 37-11번지",
+    "lat": 37.5615901232173,
+    "lng": 126.996574866645,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "한밭식품",
+    "roadAddress": "서울 중구 창경궁로 53-1",
+    "jibunAddress": "서울 중구 을지로4가 85-1",
+    "lat": 37.5671884042023,
+    "lng": 126.99788377882,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "자현당",
+    "roadAddress": "서울 종로구 북촌로 10",
+    "jibunAddress": "서울 종로구 재동 84-16",
+    "lat": 37.5778151701853,
+    "lng": 126.985835174995,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "해피복권방",
+    "roadAddress": "서울 종로구 자하문로 14",
+    "jibunAddress": "서울 종로구 통의동 59",
+    "lat": 37.5773625771239,
+    "lng": 126.972444514632,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "비원복권",
+    "roadAddress": "서울 종로구 돈화문로 66",
+    "jibunAddress": "서울 종로구 와룡동 68",
+    "lat": 37.5744231771637,
+    "lng": 126.99119548265,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "emart24 포이사거리점",
+    "roadAddress": "서울 강남구 개포로 202 석인빌딩",
+    "jibunAddress": "서울 강남구 개포동 1238",
+    "lat": 37.4781726909959,
+    "lng": 127.044983798146,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "만물",
+    "roadAddress": "서울 강남구 테헤란로37길 42",
+    "jibunAddress": "서울 강남구 역삼동 674",
+    "lat": 37.5050548092998,
+    "lng": 127.039902064615,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "파랑새식품",
+    "roadAddress": "서울 강남구 논현로151길 23",
+    "jibunAddress": "서울 강남구 신사동 563-1",
+    "lat": 37.5198040046736,
+    "lng": 127.026301641715,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "광림마트",
+    "roadAddress": "서울 강남구 도산대로26길 8",
+    "jibunAddress": "서울 강남구 논현동 7-10",
+    "lat": 37.5186358560104,
+    "lng": 127.027480370987,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "진흥슈퍼",
+    "roadAddress": "서울 강남구 논현로150길 31 논현동빌딩",
+    "jibunAddress": "서울 강남구 논현동 61-19",
+    "lat": 37.5198382030717,
+    "lng": 127.030928356484,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "현대슈퍼",
+    "roadAddress": "서울 강남구 개포로 508",
+    "jibunAddress": "서울 강남구 개포동 186-15",
+    "lat": 37.4892333041022,
+    "lng": 127.067955632075,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "형제식품",
+    "roadAddress": "서울 강남구 학동로38길 11",
+    "jibunAddress": "서울 강남구 논현동 211",
+    "lat": 37.5142330468928,
+    "lng": 127.034552611024,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "경남마트",
+    "roadAddress": "서울 구로구 고척로52길 21",
+    "jibunAddress": "서울 구로구 고척2동 306번지",
+    "lat": 37.504694587229,
+    "lng": 126.85713764147,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "천하명당",
+    "roadAddress": "서울 구로구 오류로 60 성진빌딩",
+    "jibunAddress": "서울 구로구 오류동 170-11",
+    "lat": 37.4899757676854,
+    "lng": 126.840327768666,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "과자종합상사",
+    "roadAddress": "서울 구로구 경인로33길 82",
+    "jibunAddress": "서울 구로구 고척2동 269-5번지",
+    "lat": 37.5014961964892,
+    "lng": 126.850865219106,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "24시미니슈퍼",
+    "roadAddress": "서울 구로구 도림로 94",
+    "jibunAddress": "서울 구로구 구로3동 147-6번지",
+    "lat": 37.4906683591329,
+    "lng": 126.8936075691,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "제일복권",
+    "roadAddress": "서울 동대문구 회기로 194",
+    "jibunAddress": "서울 동대문구 휘경동 319-1번지",
+    "lat": 37.5898471939807,
+    "lng": 127.057355809021,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "J수퍼",
+    "roadAddress": "서울 동대문구 왕산로 211",
+    "jibunAddress": "서울 동대문구 청량리동 258",
+    "lat": 37.5810824141205,
+    "lng": 127.04606817414,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권천국",
+    "roadAddress": "서울 동대문구 전농로2나길 15",
+    "jibunAddress": "서울 동대문구 답십리동 488-60",
+    "lat": 37.5674120396367,
+    "lng": 127.057445907776,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "한성식품",
+    "roadAddress": "서울 중구 수표로 26",
+    "jibunAddress": "서울 중구 저동2가 48-7번지",
+    "lat": 37.5634989049525,
+    "lng": 126.990409110289,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "무교식품",
+    "roadAddress": "서울 중구 다동길 43 한외빌딩",
+    "jibunAddress": "서울 중구 다동 70",
+    "lat": 37.5682179109709,
+    "lng": 126.981614792564,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "럭키복권방",
+    "roadAddress": "서울 노원구 노원로 428",
+    "jibunAddress": "서울 노원구 상계동 1282번지",
+    "lat": 37.654494616907,
+    "lng": 127.068103349446,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "평강슈퍼",
+    "roadAddress": "서울 노원구 노해로75길 14-2",
+    "jibunAddress": "서울 노원구 상계동 704번지",
+    "lat": 37.6542961398987,
+    "lng": 127.057601280863,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "굿데이",
+    "roadAddress": "서울 노원구 화랑로 421",
+    "jibunAddress": "서울 노원구 공릉동 683-14",
+    "lat": 37.6174995624988,
+    "lng": 127.074329424265,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "행당상회",
+    "roadAddress": "서울 성동구 고산자로 290-3",
+    "jibunAddress": "서울 성동구 행당1동 191-3번지",
+    "lat": 37.5656581434958,
+    "lng": 127.036700676915,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "대일슈퍼",
+    "roadAddress": "서울 성동구 고산자로 331",
+    "jibunAddress": "서울 성동구 마장동 568-1",
+    "lat": 37.5691915259477,
+    "lng": 127.037156998229,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "무지개슈퍼",
+    "roadAddress": "서울 영등포구 영등포로 379-1",
+    "jibunAddress": "서울 영등포구 신길동 97-82",
+    "lat": 37.5139640659239,
+    "lng": 126.920432858415,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "영일식품",
+    "roadAddress": "서울 영등포구 당산로32길 10",
+    "jibunAddress": "서울 영등포구 당산동3가 228-1",
+    "lat": 37.5262323140921,
+    "lng": 126.897846940173,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "신세계슈퍼",
+    "roadAddress": "서울 영등포구 대림로 191",
+    "jibunAddress": "서울 영등포구 대림동 739-1번지",
+    "lat": 37.4977995659931,
+    "lng": 126.898325249785,
+    "firstPrizeAutoCount": 1
+  },
+  {
+    "name": "대창청과슈퍼",
+    "roadAddress": "서울 영등포구 신길로 203",
+    "jibunAddress": "서울 영등포구 신길동 221-39",
+    "lat": 37.5102318798263,
+    "lng": 126.91030656876,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "G마트",
+    "roadAddress": "서울 영등포구 디지털로 387",
+    "jibunAddress": "서울 영등포구 대림동 862-6번지",
+    "lat": 37.49164642744,
+    "lng": 126.902185445265,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "우선식품",
+    "roadAddress": "서울 영등포구 도신로 231-2",
+    "jibunAddress": "서울 영등포구 신길동 163-5번지",
+    "lat": 37.5124972547658,
+    "lng": 126.916676953026,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "행복",
+    "roadAddress": "서울 서초구 강남대로30길 63 초석빌딩",
+    "jibunAddress": "서울 서초구 양재동 7-43",
+    "lat": 37.4827474469906,
+    "lng": 127.04058022585,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "평화슈퍼",
+    "roadAddress": "서울 은평구 연서로 198-1",
+    "jibunAddress": "서울 은평구 대조동 219-2번지",
+    "lat": 37.6163038958849,
+    "lng": 126.919014472678,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "갈현토큰",
+    "roadAddress": "서울 은평구 통일로 905",
+    "jibunAddress": "서울 은평구 갈현동 392-5",
+    "lat": 37.6237703310391,
+    "lng": 126.919602322714,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "수색마트 복권방",
+    "roadAddress": "서울 은평구 수색로 256",
+    "jibunAddress": "서울 은평구 수색동 106-1",
+    "lat": 37.5822499205314,
+    "lng": 126.896276025729,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "월드24시",
+    "roadAddress": "서울 은평구 통일로 855-15",
+    "jibunAddress": "서울 은평구 갈현1동 398-1번지",
+    "lat": 37.619245156065,
+    "lng": 126.919784349949,
+    "firstPrizeAutoCount": 2
+  },
+  {
+    "name": "영훈슈퍼마켓",
+    "roadAddress": "서울 도봉구 덕릉로 222",
+    "jibunAddress": "서울 도봉구 창3동 557-5번지",
+    "lat": 37.6378039469551,
+    "lng": 127.037625298928,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "한아름유통",
+    "roadAddress": "서울 도봉구 노해로41길 38-17",
+    "jibunAddress": "서울 도봉구 쌍문동 281-52번지",
+    "lat": 37.6508332607635,
+    "lng": 127.02548373413,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "국민슈퍼",
+    "roadAddress": "서울 도봉구 도봉로 588",
+    "jibunAddress": "서울 도봉구 창5동 731-55번지",
+    "lat": 37.657050480671,
+    "lng": 127.040104413029,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "돼지슈퍼",
+    "roadAddress": "서울 도봉구 삼양로 628",
+    "jibunAddress": "서울 도봉구 쌍문동 512-23번지",
+    "lat": 37.6591007780524,
+    "lng": 127.014143081848,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "오성할인마트",
+    "roadAddress": "서울 도봉구 도봉로 505",
+    "jibunAddress": "서울 도봉구 쌍문동 88-127번지",
+    "lat": 37.6507287394976,
+    "lng": 127.035603430274,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "럭키슈퍼",
+    "roadAddress": "서울 용산구 후암로 52",
+    "jibunAddress": "서울 용산구 후암동 27-14",
+    "lat": 37.5506099834764,
+    "lng": 126.977388406007,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "델타슈퍼",
+    "roadAddress": "서울 용산구 한강대로38가길 11",
+    "jibunAddress": "서울 용산구 한강로2가 153-5",
+    "lat": 37.5296788875034,
+    "lng": 126.970229923697,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권세상",
+    "roadAddress": "서울 양천구 곰달래로5길 26",
+    "jibunAddress": "서울 양천구 신월동 110-18번지",
+    "lat": 37.5319115765941,
+    "lng": 126.833698262468,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권판매소",
+    "roadAddress": "서울 양천구 중앙로 251",
+    "jibunAddress": "서울 양천구 신정동 1182-2",
+    "lat": 37.518714899828,
+    "lng": 126.853223171816,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "신정복권",
+    "roadAddress": "서울 양천구 신목로 70-1 신통빌딩",
+    "jibunAddress": "서울 양천구 신정동 89-29",
+    "lat": 37.5211300514313,
+    "lng": 126.873736856809,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "뉴신명",
+    "roadAddress": "서울 양천구 목동중앙서로7가길 39",
+    "jibunAddress": "서울 양천구 목동 792-1",
+    "lat": 37.5333605692773,
+    "lng": 126.863968899075,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "호야식품",
+    "roadAddress": "서울 양천구 중앙로 234",
+    "jibunAddress": "서울 양천구 신정동 1052-1번지",
+    "lat": 37.517468905719,
+    "lng": 126.854316728096,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "농심가슈퍼마트",
+    "roadAddress": "서울 양천구 목동중앙본로 54",
+    "jibunAddress": "서울 양천구 목동 234-4",
+    "lat": 37.5407064637936,
+    "lng": 126.869028000354,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "삼육구마트",
+    "roadAddress": "서울 양천구 목동중앙서로 15-1",
+    "jibunAddress": "서울 양천구 목동 790-21",
+    "lat": 37.5327890485222,
+    "lng": 126.865528200966,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "또와식품",
+    "roadAddress": "서울 강서구 양천로 694",
+    "jibunAddress": "서울 강서구 염창동 264-8번지",
+    "lat": 37.5501089578592,
+    "lng": 126.87285045317,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "현대마트",
+    "roadAddress": "서울 강서구 공항대로 649",
+    "jibunAddress": "서울 강서구 염창동 283-12번지",
+    "lat": 37.5473527618794,
+    "lng": 126.876977705085,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "강서스포츠",
+    "roadAddress": "서울 강서구 곰달래로 156-1",
+    "jibunAddress": "서울 강서구 화곡동 896-1",
+    "lat": 37.5306737702911,
+    "lng": 126.85032507277,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "화곡본마트",
+    "roadAddress": "서울 강서구 까치산로4길 3",
+    "jibunAddress": "서울 강서구 화곡본동 98-60번지",
+    "lat": 37.5424936410225,
+    "lng": 126.844138758277,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "씨유 개화산역점",
+    "roadAddress": "서울 강서구 양천로 19",
+    "jibunAddress": "서울 강서구 방화동 498-4",
+    "lat": 37.5728161264221,
+    "lng": 126.806007387736,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "새로나슈퍼",
+    "roadAddress": "서울 강서구 강서로5길 16",
+    "jibunAddress": "서울 강서구 화곡동 904-27",
+    "lat": 37.5288153466301,
+    "lng": 126.84805198443,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "진영슈퍼",
+    "roadAddress": "서울 강서구 등촌로 79",
+    "jibunAddress": "서울 강서구 등촌동 565-6",
+    "lat": 37.5370347490957,
+    "lng": 126.863259478768,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "강서슈퍼",
+    "roadAddress": "서울 강서구 공항대로59길 29",
+    "jibunAddress": "서울 강서구 등촌동 646-32번지",
+    "lat": 37.552980994635,
+    "lng": 126.863503767047,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "금강식품",
+    "roadAddress": "서울 강서구 강서로 207 영신빌딩",
+    "jibunAddress": "서울 강서구 화곡동 1024-10",
+    "lat": 37.5443743879828,
+    "lng": 126.837392186235,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "바이더웨이",
+    "roadAddress": "서울 동대문구 회기로25길 133",
+    "jibunAddress": "서울 동대문구 이문2동 283-12번지",
+    "lat": 37.5954884867562,
+    "lng": 127.058087213893,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "하나로슈퍼",
+    "roadAddress": "서울 동대문구 고산자로 484",
+    "jibunAddress": "서울 동대문구 제기동 844번지",
+    "lat": 37.5827599595273,
+    "lng": 127.038843507076,
+    "firstPrizeAutoCount": 1
+  },
+  {
+    "name": "엔마트",
+    "roadAddress": "서울 동대문구 장한로31길 10",
+    "jibunAddress": "서울 동대문구 장안2동 304-5번지",
+    "lat": 37.5754289277586,
+    "lng": 127.071299466373,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "그린슈퍼",
+    "roadAddress": "서울 동대문구 왕산로 138",
+    "jibunAddress": "서울 동대문구 용두동 24-4",
+    "lat": 37.5780406039826,
+    "lng": 127.038691734604,
+    "firstPrizeAutoCount": 1
+  },
+  {
+    "name": "일등복권방",
+    "roadAddress": "서울 동대문구 사가정로 125",
+    "jibunAddress": "서울 동대문구 전농동 38-12번지",
+    "lat": 37.5778662214288,
+    "lng": 127.058852161222,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "경성식품",
+    "roadAddress": "서울 동대문구 망우로21길 52",
+    "jibunAddress": "서울 동대문구 휘경1동 192-5번지",
+    "lat": 37.5903959972497,
+    "lng": 127.059877891806,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "역전 복권방",
+    "roadAddress": "서울 동대문구 휘경로 30",
+    "jibunAddress": "서울 동대문구 휘경동 163-18",
+    "lat": 37.5949135141788,
+    "lng": 127.063266954153,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "신영슈퍼",
+    "roadAddress": "서울 강남구 광평로51길 27",
+    "jibunAddress": "서울 강남구 수서동 708번지",
+    "lat": 37.4896147291453,
+    "lng": 127.100730117136,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "삼성마트",
+    "roadAddress": "서울 강남구 선릉로 636",
+    "jibunAddress": "서울 강남구 삼성동 34-3",
+    "lat": 37.5132619691876,
+    "lng": 127.042987878961,
+    "firstPrizeAutoCount": 1
+  },
+  {
+    "name": "그린수퍼",
+    "roadAddress": "서울 중랑구 동일로130길 42",
+    "jibunAddress": "서울 중랑구 중화동 291-40",
+    "lat": 37.5998278347882,
+    "lng": 127.082458816354,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "신안할인마트",
+    "roadAddress": "서울 중랑구 공릉로2나길 44",
+    "jibunAddress": "서울 중랑구 묵동 382번지",
+    "lat": 37.6141418050431,
+    "lng": 127.079512359283,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "묵동식품",
+    "roadAddress": "서울 중랑구 동일로 919",
+    "jibunAddress": "서울 중랑구 묵동 238-11",
+    "lat": 37.6124704724842,
+    "lng": 127.077065869395,
+    "firstPrizeAutoCount": 2
+  },
+  {
+    "name": "서울복권방",
+    "roadAddress": "서울 중랑구 동일로 809-1",
+    "jibunAddress": "서울 중랑구 중화동 305-17번지",
+    "lat": 37.6027041007592,
+    "lng": 127.078983561215,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "대박드림복권",
+    "roadAddress": "서울 중랑구 망우로 203",
+    "jibunAddress": "서울 중랑구 중화동 208-33번지",
+    "lat": 37.5939956436071,
+    "lng": 127.075008982696,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "부안식품",
+    "roadAddress": "서울 중랑구 용마산로 409",
+    "jibunAddress": "서울 중랑구 면목동 20-51",
+    "lat": 37.5881730078013,
+    "lng": 127.095884491145,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "우정상회",
+    "roadAddress": "서울 중랑구 상봉로 110",
+    "jibunAddress": "서울 중랑구 망우동 506-8",
+    "lat": 37.5957067932724,
+    "lng": 127.093345706876,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "현대슈퍼",
+    "roadAddress": "서울 중랑구 봉우재로 203-1",
+    "jibunAddress": "서울 중랑구 망우본동 514-80번지",
+    "lat": 37.5947921637057,
+    "lng": 127.095304059338,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "대구상회",
+    "roadAddress": "서울 마포구 토정로31길 51",
+    "jibunAddress": "서울 마포구 용강동 6-1번지",
+    "lat": 37.5429897342202,
+    "lng": 126.943769671532,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "새한양슈퍼",
+    "roadAddress": "서울 마포구 월드컵북로 262",
+    "jibunAddress": "서울 마포구 성산동 446",
+    "lat": 37.5720016021728,
+    "lng": 126.901257837125,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "명신사",
+    "roadAddress": "서울 마포구 월드컵로 97",
+    "jibunAddress": "서울 마포구 망원동 57-34번지",
+    "lat": 37.5572982133926,
+    "lng": 126.90871359217,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "정원쇼핑",
+    "roadAddress": "서울 서대문구 홍은중앙로 99",
+    "jibunAddress": "서울 서대문구 홍은동 9-333번지",
+    "lat": 37.5995459707689,
+    "lng": 126.948422070452,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "홍제삼거리마트",
+    "roadAddress": "서울 서대문구 통일로 407",
+    "jibunAddress": "서울 서대문구 홍제동 147-2번지",
+    "lat": 37.585918810734,
+    "lng": 126.946956564415,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "민영슈퍼",
+    "roadAddress": "서울 서대문구 응암로 104",
+    "jibunAddress": "서울 서대문구 북가좌동 292-11번지",
+    "lat": 37.5817492508751,
+    "lng": 126.91302263905,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "강원슈퍼",
+    "roadAddress": "서울 서대문구 모래내로 355",
+    "jibunAddress": "서울 서대문구 홍은동 277-18번지",
+    "lat": 37.5816365749183,
+    "lng": 126.935559395746,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "제일슈퍼",
+    "roadAddress": "서울 서대문구 응암로 79 문화빌딩",
+    "jibunAddress": "서울 서대문구 북가좌동 309-3",
+    "lat": 37.5802546696289,
+    "lng": 126.911189682461,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권샵",
+    "roadAddress": "서울 서대문구 거북골로 39",
+    "jibunAddress": "서울 서대문구 남가좌동 343-1",
+    "lat": 37.5791427712657,
+    "lng": 126.923573936896,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "코사마트",
+    "roadAddress": "서울 동작구 상도로 10-7",
+    "jibunAddress": "서울 동작구 대방동 401-5",
+    "lat": 37.4997328776063,
+    "lng": 126.922059369225,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "개미식품",
+    "roadAddress": "서울 동작구 노량진로 110",
+    "jibunAddress": "서울 동작구 노량진동 41-5",
+    "lat": 37.5131853341731,
+    "lng": 126.938038724901,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "삼원미니슈퍼",
+    "roadAddress": "서울 동작구 상도로 93",
+    "jibunAddress": "서울 동작구 상도동 328-7",
+    "lat": 37.5001237923409,
+    "lng": 126.930835747931,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "상도편의점",
+    "roadAddress": "서울 동작구 상도로 276",
+    "jibunAddress": "서울 동작구 상도1동 745-1",
+    "lat": 37.5027022327321,
+    "lng": 126.947726624915,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "신영상회",
+    "roadAddress": "서울 동작구 장승배기로 143",
+    "jibunAddress": "서울 동작구 노량진동 235-5",
+    "lat": 37.5103790318337,
+    "lng": 126.939889637106,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "한냉매점",
+    "roadAddress": "서울 동작구 노들로 674 노량진수산물도매시장",
+    "jibunAddress": "서울 동작구 노량진동 13-6",
+    "lat": 37.5148236866215,
+    "lng": 126.937975950622,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "인동상회",
+    "roadAddress": "서울 노원구 한글비석로 396",
+    "jibunAddress": "서울 노원구 상계5동 173-1번지",
+    "lat": 37.6623030184626,
+    "lng": 127.073581746977,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "동아슈퍼",
+    "roadAddress": "서울 노원구 노원로 522",
+    "jibunAddress": "서울 노원구 상계10동 673번지",
+    "lat": 37.6611602749525,
+    "lng": 127.060997299689,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "우성슈퍼",
+    "roadAddress": "서울 강동구 구천면로 371",
+    "jibunAddress": "서울 강동구 암사동 421-6번지",
+    "lat": 37.5506975616259,
+    "lng": 127.139760984399,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "삼익마트",
+    "roadAddress": "서울 강동구 상암로 211",
+    "jibunAddress": "서울 강동구 명일동 341-5번지",
+    "lat": 37.5466468565575,
+    "lng": 127.14615974634,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "롯데마트",
+    "roadAddress": "서울 강동구 상일로 17",
+    "jibunAddress": "서울 강동구 상일동 342번지",
+    "lat": 37.5486339615372,
+    "lng": 127.172995125763,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "동원마트",
+    "roadAddress": "서울 강동구 풍성로 209",
+    "jibunAddress": "서울 강동구 성내3동 412-6번지",
+    "lat": 37.5293607424181,
+    "lng": 127.135101909071,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "그린슈퍼",
+    "roadAddress": "서울 강동구 천중로52길 15",
+    "jibunAddress": "서울 강동구 길동 355-1번지",
+    "lat": 37.5401194764202,
+    "lng": 127.144184755031,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "시흥식품",
+    "roadAddress": "서울 금천구 시흥대로63길 13",
+    "jibunAddress": "서울 금천구 시흥동 121-10",
+    "lat": 37.4549159403004,
+    "lng": 126.898856438667,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "대성미니슈퍼",
+    "roadAddress": "서울 관악구 남부순환로 1413",
+    "jibunAddress": "서울 관악구 신림동 566-2",
+    "lat": 37.4808418636748,
+    "lng": 126.907624183545,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "럭키슈퍼",
+    "roadAddress": "서울 금천구 시흥대로 143",
+    "jibunAddress": "서울 금천구 시흥동 985-12",
+    "lat": 37.4469144295724,
+    "lng": 126.903083261559,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "혜성슈퍼",
+    "roadAddress": "서울 관악구 호암로24길 42 법포",
+    "jibunAddress": "서울 관악구 신림동 1535",
+    "lat": 37.4694140104224,
+    "lng": 126.935461757601,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "유창슈퍼",
+    "roadAddress": "서울 금천구 범안로17길 41 진도3차아파트",
+    "jibunAddress": "서울 금천구 독산동 1136",
+    "lat": 37.4683771536712,
+    "lng": 126.893134662324,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "대화식품",
+    "roadAddress": "서울 금천구 가산로 58",
+    "jibunAddress": "서울 금천구 독산동 151-11",
+    "lat": 37.4719571984379,
+    "lng": 126.896749792664,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "여명슈퍼마켓",
+    "roadAddress": "서울 성북구 장위로15길 4",
+    "jibunAddress": "서울 성북구 장위동 230-188번지",
+    "lat": 37.6143383360608,
+    "lng": 127.041508798054,
+    "firstPrizeAutoCount": 1
+  },
+  {
+    "name": "행운마트",
+    "roadAddress": "서울 성북구 종암로 174",
+    "jibunAddress": "서울 성북구 하월곡동 90-121번지",
+    "lat": 37.6053788518989,
+    "lng": 127.031796231615,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "행운부동산(IGA)",
+    "roadAddress": "서울 성북구 보국문로 167",
+    "jibunAddress": "서울 성북구 정릉동 780번지",
+    "lat": 37.6166861195907,
+    "lng": 127.001842160026,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "데이앤나잇",
+    "roadAddress": "서울 성북구 종암로 132 종암우림카이저팰리스",
+    "jibunAddress": "서울 성북구 종암동 132",
+    "lat": 37.6019090131896,
+    "lng": 127.033550711598,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "일공일사(1014)",
+    "roadAddress": "서울 성북구 성북로 31",
+    "jibunAddress": "서울 성북구 성북동1가 116",
+    "lat": 37.5907034112405,
+    "lng": 127.003624160954,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "한양슈퍼복권",
+    "roadAddress": "서울 성북구 지봉로24길 65",
+    "jibunAddress": "서울 성북구 보문동5가 148번지",
+    "lat": 37.5823457922465,
+    "lng": 127.020479292008,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "보원상회",
+    "roadAddress": "서울 성북구 보문로 56",
+    "jibunAddress": "서울 성북구 보문동7가 22-14번지",
+    "lat": 37.5804577063629,
+    "lng": 127.022268530754,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "크로바",
+    "roadAddress": "서울 종로구 종로54길 42",
+    "jibunAddress": "서울 종로구 창신동 411-16",
+    "lat": 37.5704102748967,
+    "lng": 127.013993515344,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "세븐일레븐 강변테크노마트점",
+    "roadAddress": "서울 광진구 광나루로56길 85",
+    "jibunAddress": "서울 광진구 구의동 546-4번지",
+    "lat": 37.535725176732,
+    "lng": 127.095692162256,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "현대식품",
+    "roadAddress": "서울 광진구 아차산로 413",
+    "jibunAddress": "서울 광진구 구의1동 243-22번지",
+    "lat": 37.5379349143708,
+    "lng": 127.088484024189,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "성우미니마트",
+    "roadAddress": "서울 송파구 가락로 167",
+    "jibunAddress": "서울 송파구 송파동 122-9",
+    "lat": 37.503971543248,
+    "lng": 127.113732433506,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "럭키슈퍼",
+    "roadAddress": "서울 송파구 송파대로42길 20",
+    "jibunAddress": "서울 송파구 송파1동 87-20번지",
+    "lat": 37.5053598849307,
+    "lng": 127.109846694797,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "명진슈퍼",
+    "roadAddress": "서울 송파구 새말로 142",
+    "jibunAddress": "서울 송파구 문정동 97-4번지",
+    "lat": 37.4835370129283,
+    "lng": 127.129626619435,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "해피데이마트",
+    "roadAddress": "서울 송파구 동남로6길 14",
+    "jibunAddress": "서울 송파구 문정동 30-17번지",
+    "lat": 37.4890442461633,
+    "lng": 127.124683310429,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "우일",
+    "roadAddress": "서울 송파구 마천로 235",
+    "jibunAddress": "서울 송파구 마천2동 25-2번지",
+    "lat": 37.4999523210187,
+    "lng": 127.143980825023,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "혜성슈퍼",
+    "roadAddress": "서울 송파구 송이로27길 9",
+    "jibunAddress": "서울 송파구 가락2동 132-7번지",
+    "lat": 37.4934490727209,
+    "lng": 127.126056861074,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권파티",
+    "roadAddress": "서울 송파구 오금로 516",
+    "jibunAddress": "서울 송파구 거여동 31-10번지",
+    "lat": 37.4928082771831,
+    "lng": 127.146155861134,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "동원식품",
+    "roadAddress": "서울 송파구 오금로40길 40",
+    "jibunAddress": "서울 송파구 가락동 154-18번지",
+    "lat": 37.4971899312652,
+    "lng": 127.128757519431,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "피터팬",
+    "roadAddress": "서울 은평구 은평로 193",
+    "jibunAddress": "서울 은평구 녹번동 206번지",
+    "lat": 37.601799895141,
+    "lng": 126.929001628625,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "쎄븐타임",
+    "roadAddress": "서울 용산구 백범로47길 6",
+    "jibunAddress": "서울 용산구 효창동 5-220",
+    "lat": 37.5407479285905,
+    "lng": 126.958508157843,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "아이비즈마트",
+    "roadAddress": "서울 용산구 만리재로 148",
+    "jibunAddress": "서울 용산구 서계동 264-3번지",
+    "lat": 37.5523090927524,
+    "lng": 126.963692793423,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "해태24시",
+    "roadAddress": "서울 양천구 곰달래로 11",
+    "jibunAddress": "서울 양천구 신월동 126-35",
+    "lat": 37.5299151109628,
+    "lng": 126.833933829169,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "로또행운마트",
+    "roadAddress": "서울 양천구 남부순환로 327",
+    "jibunAddress": "서울 양천구 신월5동 52-11번지",
+    "lat": 37.5377433843622,
+    "lng": 126.827477983588,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "드림복권",
+    "roadAddress": "서울 동대문구 장한로 147",
+    "jibunAddress": "서울 동대문구 장안동 306-3",
+    "lat": 37.5734759650115,
+    "lng": 127.071542683758,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "CU경기대사거리점",
+    "roadAddress": "서울 서대문구 경기대로 62",
+    "jibunAddress": "서울 서대문구 충정로2가 184-7",
+    "lat": 37.5642990614534,
+    "lng": 126.963820082909,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "스파",
+    "roadAddress": "서울 노원구 동일로 1493 상계주공아파트(10단지)",
+    "jibunAddress": "서울 노원구 상계동 666-3",
+    "lat": 37.6616423693886,
+    "lng": 127.058001700205,
+    "firstPrizeAutoCount": 2
+  },
+  {
+    "name": "오렌지스토아",
+    "roadAddress": "서울 광진구 면목로 105",
+    "jibunAddress": "서울 광진구 중곡동 245-1번지",
+    "lat": 37.5629930042223,
+    "lng": 127.079520558432,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "MS마트",
+    "roadAddress": "서울 광진구 광나루로 546 두성빌딩",
+    "jibunAddress": "서울 광진구 구의동 229-7",
+    "lat": 37.5445380643063,
+    "lng": 127.090158741209,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가로매점",
+    "roadAddress": "서울 강북구 도봉로 52",
+    "jibunAddress": "서울 강북구 미아동 1364",
+    "lat": 37.613699372646,
+    "lng": 127.03052852605,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "토큰판매점",
+    "roadAddress": "서울 강북구 도봉로 45",
+    "jibunAddress": "서울 강북구 송천동 60-5번지",
+    "lat": 37.6131435556689,
+    "lng": 127.02945322795,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "토큰박스",
+    "roadAddress": "서울 강북구 도봉로 334",
+    "jibunAddress": "서울 강북구 번1동 446-50번지",
+    "lat": 37.6375490492844,
+    "lng": 127.025542416455,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "1등복권방",
+    "roadAddress": "서울 강북구 삼양로 252",
+    "jibunAddress": "서울 강북구 삼양동 777-3번지",
+    "lat": 37.6258469200137,
+    "lng": 127.018477215618,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "센타포인트명동앞복지가판점",
+    "roadAddress": "서울 중구 남대문로 84",
+    "jibunAddress": "서울 중구 남대문로2가 9-1",
+    "lat": 37.5646814161054,
+    "lng": 126.98284068814,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "종합가판제141호",
+    "roadAddress": "서울 중구 퇴계로 447",
+    "jibunAddress": "서울 중구 황학동 686번지",
+    "lat": 37.5660419798503,
+    "lng": 127.021721835241,
+    "firstPrizeAutoCount": 1
+  },
+  {
+    "name": "가로판매점117호",
+    "roadAddress": "서울 중구 장충단로 257",
+    "jibunAddress": "서울 중구 을지로6가 18-88번지",
+    "lat": 37.5676123062765,
+    "lng": 127.008496286802,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "종합가로판매점113호패션TV앞",
+    "roadAddress": "서울 중구 을지로 264 롯데 FiTin",
+    "jibunAddress": "서울 중구 을지로6가 21-31",
+    "lat": 37.5657600422078,
+    "lng": 127.007079629799,
+    "firstPrizeAutoCount": 1
+  },
+  {
+    "name": "상호없음",
+    "roadAddress": "서울 중구 다산로 109-1",
+    "jibunAddress": "서울 중구 신당동 369-2",
+    "lat": 37.5536990954976,
+    "lng": 127.009878898057,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "종로3가1호선역2번출구가로판매점82호",
+    "roadAddress": "서울 종로구 돈화문로 23",
+    "jibunAddress": "서울 종로구 종로3가 23-1",
+    "lat": 37.5707099565421,
+    "lng": 126.991896039813,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가야복권방",
+    "roadAddress": "서울 종로구 통일로 246-10 무악현대아파트",
+    "jibunAddress": "서울 종로구 무악동 82",
+    "lat": 37.5743447023263,
+    "lng": 126.959103079359,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "동대문1번출구앞",
+    "roadAddress": "서울 종로구 종로 301",
+    "jibunAddress": "서울 종로구 창신동 551",
+    "lat": 37.5720126359978,
+    "lng": 127.01116396784,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "상호없음",
+    "roadAddress": "서울 종로구 새문안로 103-1",
+    "jibunAddress": "서울 종로구 신문로1가 10-1번지",
+    "lat": 37.5704809608086,
+    "lng": 126.976179012331,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "SK텔레콤종로지점앞가판대",
+    "roadAddress": "서울 종로구 우정국로 6 SK텔레콤",
+    "jibunAddress": "서울 종로구 관철동 290",
+    "lat": 37.5694160213616,
+    "lng": 126.983203748708,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "신사우리가판",
+    "roadAddress": "서울 강남구 강남대로 620",
+    "jibunAddress": "서울 강남구 신사동 502-11",
+    "lat": 37.5171459798091,
+    "lng": 127.01969555607,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "버스표판매소",
+    "roadAddress": "서울 강남구 압구정로  151-2",
+    "jibunAddress": "서울 강남구 압구정동 394",
+    "lat": 37.5253017040331,
+    "lng": 127.024382096001,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "선릉가판점",
+    "roadAddress": "서울 강남구 선릉로 519 삼능빌딩",
+    "jibunAddress": "서울 강남구 역삼동 696-40",
+    "lat": 37.5058724287544,
+    "lng": 127.048007701663,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "교통카드 충전소",
+    "roadAddress": "서울 강남구 논현로 837 원방빌딩",
+    "jibunAddress": "서울 강남구 신사동 584-3",
+    "lat": 37.5233390681827,
+    "lng": 127.027961858387,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가로판매대(구)-3",
+    "roadAddress": "서울 강남구 압구정로 201 현대아파트",
+    "jibunAddress": "서울 강남구 압구정동 458",
+    "lat": 37.5315341736395,
+    "lng": 127.029273123095,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "행복편의점",
+    "roadAddress": "서울 구로구 구로중앙로 14",
+    "jibunAddress": "서울 구로구 구로동 142-65번지",
+    "lat": 37.4915949425815,
+    "lng": 126.892301347465,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "버스토큰판매소",
+    "roadAddress": "서울 구로구 시흥대로 577",
+    "jibunAddress": "서울 구로구 구로동 1123-1",
+    "lat": 37.4844404933455,
+    "lng": 126.902251260428,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "교통카드판매대",
+    "roadAddress": "서울 구로구 경인로 661",
+    "jibunAddress": "서울 구로구 신도림동 337번지",
+    "lat": 37.5096619486431,
+    "lng": 126.887986372819,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가판점",
+    "roadAddress": "서울 구로구 경인로3길 지하 64",
+    "jibunAddress": "서울 구로구 온수동 119번지",
+    "lat": 37.4921502838112,
+    "lng": 126.823380714316,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "종합가판점",
+    "roadAddress": "서울 구로구 가마산로 245",
+    "jibunAddress": "서울 구로구 구로동 435번지",
+    "lat": 37.4955054632154,
+    "lng": 126.888292375229,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "버스토큰판매소",
+    "roadAddress": "서울 구로구 경인로 323",
+    "jibunAddress": "서울 구로구 개봉1동 157-13번지",
+    "lat": 37.4976492584883,
+    "lng": 126.856165293577,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "명당복권",
+    "roadAddress": "서울 동대문구 왕산로 112-1",
+    "jibunAddress": "서울 동대문구 용두동 711-4번지",
+    "lat": 37.5779882784407,
+    "lng": 127.035764275811,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "종합가판점",
+    "roadAddress": "서울 동대문구 왕산로40길 6",
+    "jibunAddress": "서울 동대문구 전농동 620-26",
+    "lat": 37.5796967482384,
+    "lng": 127.044971447146,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "상호없음",
+    "roadAddress": "서울 중구 세종대로 90-1",
+    "jibunAddress": "서울 중구 태평로2가 113-1",
+    "lat": 37.564146632244,
+    "lng": 126.977256980415,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가로판매점",
+    "roadAddress": "서울 중구 서소문로 109",
+    "jibunAddress": "서울 중구 서소문동 53-6번지",
+    "lat": 37.5630615400711,
+    "lng": 126.97327976746,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가판100호",
+    "roadAddress": "서울 중구 을지로 113-4",
+    "jibunAddress": "서울 중구 을지로3가 335-1",
+    "lat": 37.5663702031151,
+    "lng": 126.990452320275,
+    "firstPrizeAutoCount": 1
+  },
+  {
+    "name": "남대문회현역가판15호",
+    "roadAddress": "서울 중구 퇴계로 45",
+    "jibunAddress": "서울 중구 남창동 47-12",
+    "lat": 37.5582871492524,
+    "lng": 126.977566604666,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "신가로판매점",
+    "roadAddress": "서울 중구 세종대로 93",
+    "jibunAddress": "서울 중구 태평로2가 360-1번지",
+    "lat": 37.5647034150206,
+    "lng": 126.976627149878,
+    "firstPrizeAutoCount": 1
+  },
+  {
+    "name": "가로판매대제152호(신)",
+    "roadAddress": "서울 중구 남대문로 114",
+    "jibunAddress": "서울 중구 남대문로1가 22-6번지",
+    "lat": 37.5673157742697,
+    "lng": 126.983020510808,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "하나은행별관앞가판43호",
+    "roadAddress": "서울 중구 을지로 55",
+    "jibunAddress": "서울 중구 을지로2가 9-10번지",
+    "lat": 37.5664091520687,
+    "lng": 126.984024032221,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가로가판대제57호(구)",
+    "roadAddress": "서울 중구 세종대로14길 6-2",
+    "jibunAddress": "서울 중구 태평로2가 69-1번지",
+    "lat": 37.5629150248216,
+    "lng": 126.977073656125,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "중구가판12호",
+    "roadAddress": "서울 중구 한강대로 416",
+    "jibunAddress": "서울 중구 남대문로5가 541번지",
+    "lat": 37.555503632236,
+    "lng": 126.973751343837,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가로판매대제18호",
+    "roadAddress": "서울 중구 소공로 51 우리은행본점",
+    "jibunAddress": "서울 중구 회현동1가 203",
+    "lat": 37.5594390741134,
+    "lng": 126.981750727877,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "중구-가로가판대-37",
+    "roadAddress": "서울 중구 남대문로 20-2",
+    "jibunAddress": "서울 중구 남대문로3가 30-6번지",
+    "lat": 37.5608306669839,
+    "lng": 126.978063161578,
+    "firstPrizeAutoCount": 1
+  },
+  {
+    "name": "가로판매대제13호",
+    "roadAddress": "서울 중구 퇴계로 36",
+    "jibunAddress": "서울 중구 남창동 169-2번지",
+    "lat": 37.5573005445419,
+    "lng": 126.977031916738,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가판14호",
+    "roadAddress": "서울 중구 퇴계로 37",
+    "jibunAddress": "서울 중구 남창동 61-4번지",
+    "lat": 37.5584466553632,
+    "lng": 126.97633371006,
+    "firstPrizeAutoCount": 1
+  },
+  {
+    "name": "신문가판대",
+    "roadAddress": "서울 중구 세종대로 5-1",
+    "jibunAddress": "서울 중구 남대문로5가 63-13",
+    "lat": 37.557748763747,
+    "lng": 126.972674923656,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가판점",
+    "roadAddress": "서울 중구 퇴계로 123",
+    "jibunAddress": "서울 중구 충무로2가 65-7번지",
+    "lat": 37.5612658980395,
+    "lng": 126.985364301804,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가로대가판점",
+    "roadAddress": "서울 은평구 통일로 741",
+    "jibunAddress": "서울 은평구 대조동 6-5번지",
+    "lat": 37.6114268242168,
+    "lng": 126.928611590744,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "황금대박점",
+    "roadAddress": "서울 노원구 공릉로 328",
+    "jibunAddress": "서울 노원구 하계동 180-11번지",
+    "lat": 37.6359987604126,
+    "lng": 127.071026820203,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가판점",
+    "roadAddress": "서울 노원구 동일로  1231-2",
+    "jibunAddress": "서울 노원구 중계동 503-3",
+    "lat": 37.639144786398,
+    "lng": 127.066603856989,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "신문판매대",
+    "roadAddress": "서울 노원구 화랑로 455-2",
+    "jibunAddress": "서울 노원구 공릉동 629-2",
+    "lat": 37.618544369897,
+    "lng": 127.077790149773,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가판대",
+    "roadAddress": "서울 도봉구 마들로 859-19",
+    "jibunAddress": "서울 도봉구 도봉동 30-1",
+    "lat": 37.6860418285068,
+    "lng": 127.046764720981,
+    "firstPrizeAutoCount": 1
+  },
+  {
+    "name": "운수대통가판점",
+    "roadAddress": "서울 성동구 왕십리로 327",
+    "jibunAddress": "서울 성동구 하왕십리동 966-14",
+    "lat": 37.5623942326737,
+    "lng": 127.033224444422,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "KB행당동지점옆가판",
+    "roadAddress": "서울 성동구 고산자로 198",
+    "jibunAddress": "서울 성동구 행당1동 320-22번지",
+    "lat": 37.5577954304177,
+    "lng": 127.034254349448,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가로판매1-4-28",
+    "roadAddress": "서울 성동구 고산자로 348",
+    "jibunAddress": "서울 성동구 마장동 522-6",
+    "lat": 37.570523648373,
+    "lng": 127.038003801303,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "만복당",
+    "roadAddress": "서울 성동구 행당로 1",
+    "jibunAddress": "서울 성동구 금호동1가 125-1",
+    "lat": 37.5548124720494,
+    "lng": 127.020335835064,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "토마토",
+    "roadAddress": "서울 성동구 마조로7길 15-1",
+    "jibunAddress": "서울 성동구 행당동 3-3번지",
+    "lat": 37.5607140257854,
+    "lng": 127.039463044873,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "당산로또명당점",
+    "roadAddress": "서울 영등포구 양평로 52",
+    "jibunAddress": "서울 영등포구 당산동6가 337-19번지",
+    "lat": 37.5346558313138,
+    "lng": 126.900875347752,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "교통카드판매대",
+    "roadAddress": "서울 영등포구 여의나루로 71 동화빌딩",
+    "jibunAddress": "서울 영등포구 여의도동 25-3",
+    "lat": 37.5237811435126,
+    "lng": 126.92687397999,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "드림로또",
+    "roadAddress": "서울 서초구 신반포로 194 강남고속버스터미널",
+    "jibunAddress": "서울 서초구 반포동 19-4",
+    "lat": 37.5064357442307,
+    "lng": 127.006834366246,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "로또와 토토",
+    "roadAddress": "서울 서초구 방배로13길 18 방배아크로타워",
+    "jibunAddress": "서울 서초구 방배동 923-6",
+    "lat": 37.4831366198927,
+    "lng": 126.995288953995,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "승지GALLANT",
+    "roadAddress": "서울 서초구 신반포로 194 강남고속버스터미널",
+    "jibunAddress": "서울 서초구 반포동 19-4",
+    "lat": 37.5064357442307,
+    "lng": 127.006834366246,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "종합가판점",
+    "roadAddress": "서울 은평구 응암로 247",
+    "jibunAddress": "서울 은평구 응암3동 124-17번지",
+    "lat": 37.5942237088269,
+    "lng": 126.917854566217,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가판",
+    "roadAddress": "서울 은평구 통일로 750",
+    "jibunAddress": "서울 은평구 불광1동 267-1번지",
+    "lat": 37.6123341513595,
+    "lng": 126.928663502355,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가판점",
+    "roadAddress": "서울 도봉구 도봉로 767",
+    "jibunAddress": "서울 도봉구 도봉동 616-19번지",
+    "lat": 37.6729336150826,
+    "lng": 127.043862401922,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "행운가판점",
+    "roadAddress": "서울 용산구 한강대로 80",
+    "jibunAddress": "서울 용산구 한강로2가 222-5",
+    "lat": 37.5273679928039,
+    "lng": 126.966508947948,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가로판매점",
+    "roadAddress": "서울 용산구 한강대로 114",
+    "jibunAddress": "서울 용산구 한강로2가 424-2",
+    "lat": 37.5298405458258,
+    "lng": 126.96890369503,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가로판매점",
+    "roadAddress": "서울 용산구 원효로 179",
+    "jibunAddress": "서울 용산구 원효로2가 72번지",
+    "lat": 37.536196874528,
+    "lng": 126.962513836335,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "신문가판점",
+    "roadAddress": "서울 용산구 한강대로 277-3",
+    "jibunAddress": "서울 용산구 갈월동 90-3",
+    "lat": 37.5430074595038,
+    "lng": 126.972376145279,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "이촌가판점",
+    "roadAddress": "서울 용산구 이촌로71길 10",
+    "jibunAddress": "서울 용산구 이촌동 409번지",
+    "lat": 37.520490316857,
+    "lng": 126.972980593821,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가로판매점",
+    "roadAddress": "서울 용산구 원효로 166",
+    "jibunAddress": "서울 용산구 원효로2가 94-2번지",
+    "lat": 37.5350249765358,
+    "lng": 126.961497837715,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "복권세상",
+    "roadAddress": "서울 양천구 신월로 187",
+    "jibunAddress": "서울 양천구 신월동 535-4번지",
+    "lat": 37.5196975192064,
+    "lng": 126.843662897609,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "까치복권",
+    "roadAddress": "서울 양천구 화곡로 103",
+    "jibunAddress": "서울 양천구 신월동 23-17",
+    "lat": 37.5399540326012,
+    "lng": 126.833345365308,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "토큰박스",
+    "roadAddress": "서울 동대문구 이문로 93 민족통일MJ캠퍼스외대",
+    "jibunAddress": "서울 동대문구 이문동 329-1",
+    "lat": 37.5953818714405,
+    "lng": 127.05923135853,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "로또판매점",
+    "roadAddress": "서울 동대문구 왕산로37길 11",
+    "jibunAddress": "서울 동대문구 청량리동 773",
+    "lat": 37.5806082947269,
+    "lng": 127.043985584279,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "버스카드충전소",
+    "roadAddress": "서울 강남구 테헤란로 625 덕명빌딩",
+    "jibunAddress": "서울 강남구 삼성동 170-9",
+    "lat": 37.5101503390692,
+    "lng": 127.066048979299,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "교통카드충전소",
+    "roadAddress": "서울 강남구 선릉로 309",
+    "jibunAddress": "서울 강남구 역삼동 765-9번지",
+    "lat": 37.4971857834581,
+    "lng": 127.052159610697,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "서교동가판점",
+    "roadAddress": "서울 마포구 양화로 115",
+    "jibunAddress": "서울 마포구 서교동 374-18번지",
+    "lat": 37.5541193057015,
+    "lng": 126.919475195778,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가로매점",
+    "roadAddress": "서울 마포구 마포대로 61-1",
+    "jibunAddress": "서울 마포구 도화동 559",
+    "lat": 37.5413752734015,
+    "lng": 126.947985911857,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "로또복권판매소",
+    "roadAddress": "서울 마포구 마포대로 44",
+    "jibunAddress": "서울 마포구 도화동 37번지",
+    "lat": 37.539973013511,
+    "lng": 126.947098319374,
+    "firstPrizeAutoCount": 1
+  },
+  {
+    "name": "아현역3번출구앞가판점",
+    "roadAddress": "서울 마포구 마포대로 249 아현산업정보학교",
+    "jibunAddress": "서울 마포구 아현동 267-1",
+    "lat": 37.557026368803,
+    "lng": 126.958022776892,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가로판매점",
+    "roadAddress": "서울 서대문구 수색로 32",
+    "jibunAddress": "서울 서대문구 남가좌동 293-85",
+    "lat": 37.5694956315367,
+    "lng": 126.915117519587,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가판점",
+    "roadAddress": "서울 서대문구 신촌로 155",
+    "jibunAddress": "서울 서대문구 대현동 101-25번지",
+    "lat": 37.5569438763223,
+    "lng": 126.943246389013,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "대박종합복권가로판매점",
+    "roadAddress": "서울 서대문구 신촌로 75",
+    "jibunAddress": "서울 서대문구 창천동 72-7번지",
+    "lat": 37.5560882413034,
+    "lng": 126.934944004562,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가로판매점",
+    "roadAddress": "서울 서대문구 신촌로 103",
+    "jibunAddress": "서울 서대문구 창천동 18-42",
+    "lat": 37.5557031871065,
+    "lng": 126.937505573932,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가로판매점18호",
+    "roadAddress": "서울 서대문구 신촌역로 16 신촌가이아",
+    "jibunAddress": "서울 서대문구 대현동 27-20",
+    "lat": 37.5580660357746,
+    "lng": 126.943178650134,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "토로또가판점",
+    "roadAddress": "서울 동작구 노량진로 168-2",
+    "jibunAddress": "서울 동작구 노량진동 148-80",
+    "lat": 37.5136744066629,
+    "lng": 126.944581973944,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "토큰박스",
+    "roadAddress": "서울 동작구 흑석로 106-5",
+    "jibunAddress": "서울 동작구 흑석동 102-25",
+    "lat": 37.507891625309,
+    "lng": 126.961459298755,
+    "firstPrizeAutoCount": 1
+  },
+  {
+    "name": "Q마트",
+    "roadAddress": "서울 동작구 장승배기로 146 노량진1동우편취급소",
+    "jibunAddress": "서울 동작구 노량진동 236-13",
+    "lat": 37.5105224391929,
+    "lng": 126.94035868363,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가판점",
+    "roadAddress": "서울 동작구 상도로 246 일강빌딩",
+    "jibunAddress": "서울 동작구 상도동 32-10",
+    "lat": 37.5047449090099,
+    "lng": 126.945743519213,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가판점",
+    "roadAddress": "서울 강동구 천호대로 1073 힐탑프라자",
+    "jibunAddress": "서울 강동구 천호동 449-49",
+    "lat": 37.5365252568381,
+    "lng": 127.13140289598,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "버스표 담배",
+    "roadAddress": "서울 강동구 올림픽로 811",
+    "jibunAddress": "서울 강동구 암사동 504-22번지",
+    "lat": 37.5534805170682,
+    "lng": 127.128374458437,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "행운마트",
+    "roadAddress": "서울 강동구 구천면로34길 71",
+    "jibunAddress": "서울 강동구 천호동 100-3번지",
+    "lat": 37.5428584686132,
+    "lng": 127.13507907661,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "대박가판장",
+    "roadAddress": "서울 강동구 양재대로 1627",
+    "jibunAddress": "서울 강동구 명일동 312-92",
+    "lat": 37.5509185586273,
+    "lng": 127.143753342556,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가로판매점",
+    "roadAddress": "서울 강동구 양재대로 1443",
+    "jibunAddress": "서울 강동구 길동 458-5번지",
+    "lat": 37.5349294508496,
+    "lng": 127.138537223096,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "돼지복권",
+    "roadAddress": "서울 강동구 올림픽로 746",
+    "jibunAddress": "서울 강동구 천호동 315",
+    "lat": 37.5476995988425,
+    "lng": 127.126982162082,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가로판매대",
+    "roadAddress": "서울 강동구 올림픽로 648",
+    "jibunAddress": "서울 강동구 천호동 455-21",
+    "lat": 37.5392912715768,
+    "lng": 127.123867283286,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "베네시티앞가판",
+    "roadAddress": "서울 강동구 올림픽로 664",
+    "jibunAddress": "서울 강동구 천호2동 425-5번지",
+    "lat": 37.540555377209,
+    "lng": 127.124975762766,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가로판매점",
+    "roadAddress": "서울 관악구 과천대로 955",
+    "jibunAddress": "서울 관악구 남현동 1060-11",
+    "lat": 37.4759416445717,
+    "lng": 126.981163275417,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "로또 명당 가판점",
+    "roadAddress": "서울 금천구 남부순환로 1390 전영수내과의원",
+    "jibunAddress": "서울 금천구 독산동 876-2",
+    "lat": 37.479839203517,
+    "lng": 126.905213073868,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "사당",
+    "roadAddress": "서울 관악구 과천대로 953",
+    "jibunAddress": "서울 관악구 남현동 1061-59",
+    "lat": 37.4756965883653,
+    "lng": 126.981279442342,
+    "firstPrizeAutoCount": 1
+  },
+  {
+    "name": "가로가판대",
+    "roadAddress": "서울 관악구 시흥대로 572 한성빌딩",
+    "jibunAddress": "서울 관악구 신림동 1643-6",
+    "lat": 37.4838892721327,
+    "lng": 126.90281628743,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가로판매점",
+    "roadAddress": "서울 금천구 시흥대로 480",
+    "jibunAddress": "서울 금천구 독산3동 967-19번지",
+    "lat": 37.4763490062241,
+    "lng": 126.899062713087,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "예술인마을버스판매소",
+    "roadAddress": "서울 관악구 남부순환로 2056 태림빌딩",
+    "jibunAddress": "서울 관악구 남현동 1057-22",
+    "lat": 37.4763222522103,
+    "lng": 126.977192725834,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가로판매점",
+    "roadAddress": "서울 금천구 시흥대로 217 시흥동우체국",
+    "jibunAddress": "서울 금천구 시흥동 993-2",
+    "lat": 37.4531527058848,
+    "lng": 126.9007189928,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "88수퍼",
+    "roadAddress": "서울 금천구 가산로 130",
+    "jibunAddress": "서울 금천구 가산동 145-23",
+    "lat": 37.4771882119295,
+    "lng": 126.892134919121,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "신림마트",
+    "roadAddress": "서울 관악구 남부순환로 1588 신림빌딩",
+    "jibunAddress": "서울 관악구 신림동 1639-1",
+    "lat": 37.4836621995067,
+    "lng": 126.927071163442,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "74호종합가판",
+    "roadAddress": "서울 종로구 청계천로 111",
+    "jibunAddress": "서울 종로구 관수동 149-2",
+    "lat": 37.5684316342984,
+    "lng": 126.989885073414,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가로매점",
+    "roadAddress": "서울 광진구 광나루로 375-1",
+    "jibunAddress": "서울 광진구 군자동 361-28번지",
+    "lat": 37.5481605406369,
+    "lng": 127.071743335135,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "가판",
+    "roadAddress": "서울 광진구 용마산로 55",
+    "jibunAddress": "서울 광진구 중곡동 124-11번지",
+    "lat": 37.5585840685561,
+    "lng": 127.087542235196,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "백악관앞가판",
+    "roadAddress": "서울 광진구 천호대로 647",
+    "jibunAddress": "서울 광진구 중곡동 115-4번지",
+    "lat": 37.5532471208621,
+    "lng": 127.089558340012,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "Today",
+    "roadAddress": "서울 광진구 광나루로56길 85",
+    "jibunAddress": "서울 광진구 구의동 546-4번지",
+    "lat": 37.535725176732,
+    "lng": 127.095692162256,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "광장하이퍼",
+    "roadAddress": "서울 구로구 경인로53길 15",
+    "jibunAddress": "서울 구로구 구로동 1258번지",
+    "lat": 37.5020321024364,
+    "lng": 126.876117278882,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "이마트24 서울고속터미널4호점",
+    "roadAddress": "서울 서초구 신반포로 194 강남고속버스터미널",
+    "jibunAddress": "서울 서초구 반포동 19-4",
+    "lat": 37.5064357442307,
+    "lng": 127.006834366246,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "연초2호 쇼케이스7호",
+    "roadAddress": "서울 서초구 신반포로 194 강남고속버스터미널",
+    "jibunAddress": "서울 서초구 반포동 19-4",
+    "lat": 37.5064357442307,
+    "lng": 127.006834366246,
+    "firstPrizeAutoCount": null
+  },
+  {
+    "name": "경부선 하차장로또방",
+    "roadAddress": "서울 서초구 신반포로 194 강남고속버스터미널",
+    "jibunAddress": "서울 서초구 반포동 19-4",
+    "lat": 37.5064357442307,
+    "lng": 127.006834366246,
+    "firstPrizeAutoCount": null
+  }
+]

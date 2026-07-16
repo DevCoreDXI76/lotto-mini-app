@@ -6,7 +6,7 @@ import { generateUniqueGames } from '@/lib/lotto/generate';
 import { normalizeIncluded } from '@/lib/lotto/strategies';
 import { track } from '@vercel/analytics';
 import { loadHistory } from '@/lib/lotto/history';
-import { calcBudgetInfo, ONLINE_LIMIT_WON } from '@/lib/lotto/budget';
+import { calcBudgetInfo, ONLINE_LIMIT_WON, OFFLINE_LIMIT_WON } from '@/lib/lotto/budget';
 import {
   getPrimaryCandidates,
   getSpreadCandidates,
@@ -160,7 +160,10 @@ export default function GeneratorPage() {
                 )}
                 {budgetInfo.exceedsOnlineLimit && (
                   <p className="text-sm text-amber-600">
-                    온라인으로 직접 구매 시 1회 한도는 {ONLINE_LIMIT_WON.toLocaleString()}원입니다.
+                    온라인으로 직접 구매 시 1회 한도는 {ONLINE_LIMIT_WON.toLocaleString()}원입니다
+                    {!budgetInfo.clamped &&
+                      ` (오프라인 구매 시 1회 한도는 ${OFFLINE_LIMIT_WON.toLocaleString()}원입니다)`}
+                    .
                   </p>
                 )}
               </div>

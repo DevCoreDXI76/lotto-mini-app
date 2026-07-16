@@ -15,12 +15,22 @@ function latestDraw(history: LottoDraw[]): LottoDraw | undefined {
   return [...history].sort((a, b) => b.drawNumber - a.drawNumber)[0];
 }
 
-export function frequencyWeights(history: LottoDraw[], excluded: number[]): Map<number, number> {
-  const weights = baseWeights(excluded);
+export function countOccurrences(history: LottoDraw[]): Map<number, number> {
+  const counts = new Map<number, number>();
+  for (const n of ALL_NUMBERS) counts.set(n, 0);
   for (const draw of history) {
     for (const n of draw.numbers) {
-      if (weights.has(n)) weights.set(n, weights.get(n)! + 1);
+      if (counts.has(n)) counts.set(n, counts.get(n)! + 1);
     }
+  }
+  return counts;
+}
+
+export function frequencyWeights(history: LottoDraw[], excluded: number[]): Map<number, number> {
+  const weights = baseWeights(excluded);
+  const counts = countOccurrences(history);
+  for (const [n, w] of weights) {
+    weights.set(n, w + counts.get(n)!);
   }
   return weights;
 }

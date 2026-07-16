@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { prependEntries, MAX_HISTORY_ENTRIES } from './recentHistory';
+import { prependEntries, migrateHistoryEntries, MAX_HISTORY_ENTRIES } from './recentHistory';
 import type { HistoryEntry } from './recentHistory';
 
 function makeEntry(n: number): HistoryEntry {
@@ -26,5 +26,26 @@ describe('prependEntries', () => {
   it('returns just the new entries when current is empty', () => {
     const result = prependEntries([], [makeEntry(1)]);
     expect(result).toEqual([makeEntry(1)]);
+  });
+});
+
+describe('migrateHistoryEntries', () => {
+  it('rewrites the retired "carryover" strategy id to "frequency"', () => {
+    const stored = [{ numbers: [1, 2, 3, 4, 5, 6], strategy: 'carryover', timestamp: 1 }];
+    const result = migrateHistoryEntries(stored);
+    expect(result).toEqual([{ numbers: [1, 2, 3, 4, 5, 6], strategy: 'frequency', timestamp: 1 }]);
+  });
+
+  it('leaves current strategy ids unchanged', () => {
+    const entry = makeEntry(1);
+    expect(migrateHistoryEntries([entry])).toEqual([entry]);
+  });
+
+  it('drops entries with an unrecognized strategy id instead of guessing', () => {
+    const stored = [
+      { numbers: [1, 2, 3, 4, 5, 6], strategy: 'not-a-real-strategy', timestamp: 1 },
+      makeEntry(2),
+    ];
+    expect(migrateHistoryEntries(stored)).toEqual([makeEntry(2)]);
   });
 });

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { LatestDraw } from '@/components/lotto/LatestDraw';
 import { Disclaimer } from '@/components/lotto/Disclaimer';
+import { StoreFinderLink } from '@/components/lotto/StoreFinderLink';
 import fullHistory from '@/data/lotto-full-history.json';
 import type { LottoDraw } from '@/lib/lotto/types';
 import { computeFrequencyRanking } from '@/lib/lotto/stats';
@@ -33,12 +34,7 @@ export default function Home() {
         </Link>
       </div>
 
-      <Link
-        href="/stores"
-        className="block text-center bg-black text-white rounded-lg py-3 font-semibold"
-      >
-        판매점 찾기
-      </Link>
+      <StoreFinderLink />
 
       <Disclaimer />
     </main>

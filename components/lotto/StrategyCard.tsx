@@ -103,7 +103,7 @@ export function StrategyCard({
             ))}
           </ul>
           <p className="text-xs text-gray-500">
-            <span className={`font-semibold ${colors.text}`}>추천 대상</span>: {strategy.recommendedFor}
+            <span className={`font-semibold ${colors.text}`}>이런 분께</span>: {strategy.recommendedFor}
           </p>
           {!selected && (
             <button

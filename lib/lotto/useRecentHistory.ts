@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { prependEntries, type HistoryEntry } from './recentHistory';
+import { prependEntries, migrateHistoryEntries, type HistoryEntry } from './recentHistory';
 import type { GeneratedGame, Strategy } from './types';
 
 const STORAGE_KEY = 'lotto-recent-history';
@@ -12,7 +12,7 @@ function loadEntries(): HistoryEntry[] {
     if (!raw) return [];
     const parsed = JSON.parse(raw);
     if (!Array.isArray(parsed)) return [];
-    return parsed as HistoryEntry[];
+    return migrateHistoryEntries(parsed);
   } catch {
     return [];
   }

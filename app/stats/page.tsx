@@ -1,5 +1,4 @@
 // app/stats/page.tsx
-import Link from 'next/link';
 import fullHistory from '@/data/lotto-full-history.json';
 import type { LottoDraw } from '@/lib/lotto/types';
 import { computeFrequencyRanking } from '@/lib/lotto/stats';
@@ -42,10 +41,6 @@ export default function StatsPage() {
       <p className="text-sm text-gray-500">
         이 통계는 과거 데이터일 뿐이며 향후 당첨을 예측하지 않습니다.
       </p>
-
-      <Link href="/" className="block text-center text-sm text-gray-500 underline">
-        홈으로
-      </Link>
     </main>
   );
 }

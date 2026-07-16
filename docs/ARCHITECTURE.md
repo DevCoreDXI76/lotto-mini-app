@@ -195,8 +195,10 @@ export function classifyMessage(text: string | undefined): WebhookAction
 `/start` 없이도 대화창에 들어가는 즉시 미니앱을 열 수 있도록, 코드 배포와 무관한 봇 계정 설정으로 전역 메뉴 버튼을 등록했다(`setChatMenuButton` API를 `chat_id` 없이 호출하면 모든 1:1 대화에 적용되는 기본값이 된다):
 
 ```json
-{ "type": "web_app", "text": "번호 생성기", "web_app": { "url": "<APP_URL>/generator" } }
+{ "type": "web_app", "text": "미니앱 열기", "web_app": { "url": "<APP_URL>" } }
 ```
+
+(2026-07-16: F4/F13 추가 이후 `/generator`로 바로 진입하면 홈의 "판매점 찾기" 링크에 닿을 수 없어 URL을 홈(`<APP_URL>`)으로 변경했다. `/start` 인라인 버튼(`lib/telegram/api.ts`의 `sendMiniAppLaunchMessage`)도 동일하게 변경. BotFather Direct Link Mini App(`/newapp`, 아래 절)은 API로 수정 불가해 여전히 `/generator`를 가리킨다 — 필요 시 BotFather와 직접 대화해서 갱신해야 한다.)
 
 Windows(Git Bash)에서 `curl -d`로 한글 payload를 직접 넘기면 쉘 인코딩 문제로 `"menu button text must be encoded in UTF-8"` 400 에러가 난다 — UTF-8로 저장한 JSON 파일을 `--data-binary @file.json`으로 넘기면 해결된다. `TELEGRAM_BOT_TOKEN`이 재발급되거나 `APP_URL`이 바뀌면 이 호출을 다시 실행해야 한다(웹훅 등록과 별개의 설정이라 자동으로 갱신되지 않는다).
 

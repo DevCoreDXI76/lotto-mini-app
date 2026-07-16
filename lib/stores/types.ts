@@ -21,7 +21,7 @@ export interface GeocodedAddress extends AddressRecord {
 }
 
 export interface StoreWithBadge extends GeocodedAddress {
-  firstPrizeAutoCount: number;
+  firstPrizeAutoCount: number | null;
 }
 
 export interface AmbiguousGroup {

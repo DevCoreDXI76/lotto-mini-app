@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { StoreWithBadge } from '@/lib/stores/types';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type -- opaque nominal handle for kakao.maps.LatLng
@@ -14,6 +14,7 @@ interface KakaoInfoWindow {
 }
 interface KakaoMarkerClusterer {
   addMarkers: (markers: KakaoMarker[]) => void;
+  clear: () => void;
 }
 interface KakaoMapsNamespace {
   LatLng: new (lat: number, lng: number) => KakaoLatLng;
@@ -36,6 +37,15 @@ declare global {
 }
 
 const KAKAO_SDK_ID = 'kakao-maps-sdk';
+
+function escapeHtml(value: string): string {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
 
 function loadKakaoMapsSdk(appKey: string): Promise<KakaoMapsNamespace> {
   return new Promise((resolve, reject) => {
@@ -66,46 +76,59 @@ export function StoreMapView({
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const appKey = process.env.NEXT_PUBLIC_KAKAO_JS_KEY;
+  const [loadError, setLoadError] = useState<string | null>(null);
 
   useEffect(() => {
-    if (!appKey || !containerRef.current) return;
+    const container = containerRef.current;
+    if (!appKey || !container) return;
 
     let cancelled = false;
+    const created: { clusterer: KakaoMarkerClusterer | null } = { clusterer: null };
 
-    loadKakaoMapsSdk(appKey).then((kakaoMaps) => {
-      if (cancelled || !containerRef.current) return;
+    loadKakaoMapsSdk(appKey)
+      .then((kakaoMaps) => {
+        if (cancelled) return;
 
-      const center = userPosition
-        ? new kakaoMaps.LatLng(userPosition.lat, userPosition.lng)
-        : new kakaoMaps.LatLng(37.5665, 126.978);
+        setLoadError(null);
 
-      const map = new kakaoMaps.Map(containerRef.current, { center, level: 7 });
+        const center = userPosition
+          ? new kakaoMaps.LatLng(userPosition.lat, userPosition.lng)
+          : new kakaoMaps.LatLng(37.5665, 126.978);
 
-      const markers = stores.map((store) => {
-        const marker = new kakaoMaps.Marker({
-          position: new kakaoMaps.LatLng(store.lat, store.lng),
+        const map = new kakaoMaps.Map(container, { center, level: 7 });
+
+        const markers = stores.map((store) => {
+          const marker = new kakaoMaps.Marker({
+            position: new kakaoMaps.LatLng(store.lat, store.lng),
+          });
+
+          const badgeLine =
+            store.firstPrizeAutoCount !== null ? `1등 ${store.firstPrizeAutoCount}회 배출<br/>` : '';
+          const directionsUrl = `https://map.kakao.com/link/to/${encodeURIComponent(store.name)},${store.lat},${store.lng}`;
+          const infoWindow = new kakaoMaps.InfoWindow({
+            content: `<div style="padding:8px;font-size:12px;"><strong>${escapeHtml(store.name)}</strong><br/>${badgeLine}<a href="${directionsUrl}" target="_blank" rel="noopener noreferrer">길찾기</a></div>`,
+          });
+
+          kakaoMaps.event.addListener(marker, 'click', () => {
+            infoWindow.open(map, marker);
+          });
+
+          return marker;
         });
 
-        const badgeLine =
-          store.firstPrizeAutoCount !== null ? `1등 ${store.firstPrizeAutoCount}회 배출<br/>` : '';
-        const directionsUrl = `https://map.kakao.com/link/to/${encodeURIComponent(store.name)},${store.lat},${store.lng}`;
-        const infoWindow = new kakaoMaps.InfoWindow({
-          content: `<div style="padding:8px;font-size:12px;"><strong>${store.name}</strong><br/>${badgeLine}<a href="${directionsUrl}" target="_blank" rel="noopener noreferrer">길찾기</a></div>`,
-        });
-
-        kakaoMaps.event.addListener(marker, 'click', () => {
-          infoWindow.open(map, marker);
-        });
-
-        return marker;
+        const clusterer = new kakaoMaps.MarkerClusterer({ map, averageCenter: true, minLevel: 6 });
+        clusterer.addMarkers(markers);
+        created.clusterer = clusterer;
+      })
+      .catch((error: unknown) => {
+        if (cancelled) return;
+        setLoadError(error instanceof Error ? error.message : '지도를 불러오지 못했습니다.');
       });
-
-      const clusterer = new kakaoMaps.MarkerClusterer({ map, averageCenter: true, minLevel: 6 });
-      clusterer.addMarkers(markers);
-    });
 
     return () => {
       cancelled = true;
+      created.clusterer?.clear();
+      container.innerHTML = '';
     };
   }, [stores, userPosition, appKey]);
 
@@ -113,6 +136,14 @@ export function StoreMapView({
     return (
       <div className="w-full h-[60vh] rounded-xl bg-white shadow-sm flex items-center justify-center text-sm text-gray-400 text-center px-4">
         지도를 표시하려면 NEXT_PUBLIC_KAKAO_JS_KEY 환경변수가 필요합니다.
+      </div>
+    );
+  }
+
+  if (loadError) {
+    return (
+      <div className="w-full h-[60vh] rounded-xl bg-white shadow-sm flex items-center justify-center text-sm text-gray-400 text-center px-4">
+        {loadError}
       </div>
     );
   }

@@ -33,6 +33,13 @@ export default function Home() {
         </Link>
       </div>
 
+      <Link
+        href="/stores"
+        className="block text-center bg-black text-white rounded-lg py-3 font-semibold"
+      >
+        판매점 찾기
+      </Link>
+
       <Disclaimer />
     </main>
   );

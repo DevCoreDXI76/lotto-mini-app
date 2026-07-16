@@ -24,6 +24,7 @@ export function StoreCard({
       <button
         type="button"
         onClick={() => setExpanded((v) => !v)}
+        aria-expanded={expanded}
         className="w-full flex items-center justify-between gap-3 text-left"
       >
         <div className="min-w-0">

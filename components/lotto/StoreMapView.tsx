@@ -103,7 +103,9 @@ export function StoreMapView({
           });
 
           const badgeLine =
-            store.firstPrizeAutoCount !== null ? `1등 ${store.firstPrizeAutoCount}회 배출<br/>` : '';
+            store.firstPrizeAutoCount !== null
+              ? `1등 ${store.firstPrizeAutoCount}회 배출<br/><span style="font-size:11px;color:#9ca3af;">자동선택 당첨 기준입니다. 특정 판매점 이용이 당첨 확률에 영향을 주지 않습니다.</span><br/>`
+              : '';
           const directionsUrl = `https://map.kakao.com/link/to/${encodeURIComponent(store.name)},${store.lat},${store.lng}`;
           const infoWindow = new kakaoMaps.InfoWindow({
             content: `<div style="padding:8px;font-size:12px;"><strong>${escapeHtml(store.name)}</strong><br/>${badgeLine}<a href="${directionsUrl}" target="_blank" rel="noopener noreferrer">길찾기</a></div>`,

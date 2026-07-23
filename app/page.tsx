@@ -7,6 +7,19 @@ import type { LottoDraw } from '@/lib/lotto/types';
 import { computeFrequencyRanking } from '@/lib/lotto/stats';
 import { NumberBall } from '@/components/lotto/NumberBall';
 import { SITE_NAME } from '@/lib/site';
+import { Faq } from '@/components/lotto/Faq';
+import { AdSlot } from '@/components/lotto/AdSlot';
+
+const HOME_FAQ_ITEMS = [
+  {
+    q: '로또랩은 무료인가요?',
+    a: '네, 번호 생성기·통계·판매점 찾기 모두 회원가입이나 결제 없이 무료로 이용할 수 있습니다.',
+  },
+  {
+    q: '로또랩에서 로또를 직접 구매할 수 있나요?',
+    a: '아니요. 로또랩은 번호 생성·통계·판매점 안내만 제공하며, 복권 판매나 구매 대행은 하지 않습니다.',
+  },
+];
 
 export default function Home() {
   const history = fullHistory as LottoDraw[];
@@ -41,6 +54,9 @@ export default function Home() {
       </div>
 
       <StoreFinderLink />
+
+      <AdSlot slot="home-bottom" />
+      <Faq items={HOME_FAQ_ITEMS} />
 
       <Disclaimer />
     </main>

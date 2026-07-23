@@ -5,12 +5,25 @@ import type { LottoDraw } from '@/lib/lotto/types';
 import { computeFrequencyRanking } from '@/lib/lotto/stats';
 import { NumberBall } from '@/components/lotto/NumberBall';
 import { FullRankingToggle } from '@/components/lotto/FullRankingToggle';
+import { Faq } from '@/components/lotto/Faq';
+import { AdSlot } from '@/components/lotto/AdSlot';
 
 export const metadata: Metadata = {
   title: '로또 당첨번호 통계',
   description:
     '역대 로또 당첨번호를 분석해 가장 많이 나온 번호 TOP 6와 전체 순위를 확인하세요. 과거 데이터 기반 통계이며 향후 당첨을 예측하지 않습니다.',
 };
+
+const STATS_FAQ_ITEMS = [
+  {
+    q: '이 통계로 다음 회차 당첨번호를 예측할 수 있나요?',
+    a: '아닙니다. 로또 추첨은 매 회차 독립적인 확률 사건이라 과거 출현 빈도가 미래 당첨을 예측하지 않습니다. 이 페이지는 과거 데이터를 정리해 보여드릴 뿐입니다.',
+  },
+  {
+    q: '순위는 얼마나 자주 바뀌나요?',
+    a: '매주 새 회차 추첨 결과가 반영될 때마다 출현 횟수가 갱신되며, 그에 따라 순위도 조금씩 바뀔 수 있습니다.',
+  },
+];
 
 export default function StatsPage() {
   const history = fullHistory as LottoDraw[];
@@ -48,6 +61,9 @@ export default function StatsPage() {
       <p className="text-sm text-gray-500">
         이 통계는 과거 데이터일 뿐이며 향후 당첨을 예측하지 않습니다.
       </p>
+
+      <AdSlot slot="stats-bottom" />
+      <Faq items={STATS_FAQ_ITEMS} />
     </main>
   );
 }

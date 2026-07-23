@@ -79,7 +79,7 @@ export default async function ResultPage({
 
       <div className="flex items-center justify-between text-sm">
         {hasPrevious ? (
-          <Link href={`/result/${draw.drawNumber - 1}`} className="text-blue-600 underline">
+          <Link href={`/result/${draw.drawNumber - 1}`} className="text-gray-500 underline">
             ← {draw.drawNumber - 1}회
           </Link>
         ) : (
@@ -89,7 +89,7 @@ export default async function ResultPage({
           전체 회차 목록
         </Link>
         {hasNext ? (
-          <Link href={`/result/${draw.drawNumber + 1}`} className="text-blue-600 underline">
+          <Link href={`/result/${draw.drawNumber + 1}`} className="text-gray-500 underline">
             {draw.drawNumber + 1}회 →
           </Link>
         ) : (

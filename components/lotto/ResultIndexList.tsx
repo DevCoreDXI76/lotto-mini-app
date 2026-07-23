@@ -7,6 +7,9 @@ import { useState } from 'react';
 const PAGE_SIZE = 50;
 
 export function ResultIndexList({ draws }: { draws: { drawNumber: number; date: string }[] }) {
+  // Unlike StoreListView's client-filtered/sorted list, `draws` is computed once in a
+  // server component and never changes reference or becomes empty, so no
+  // reset-on-prop-change guard or empty-state branch is needed here.
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const visible = draws.slice(0, visibleCount);
   const remaining = draws.length - visible.length;

@@ -7,6 +7,7 @@ const NAV_ITEMS = [
   { href: '/', label: '홈' },
   { href: '/generator', label: '번호 생성기' },
   { href: '/stats', label: '통계' },
+  { href: '/result', label: '회차별 당첨번호' },
   { href: '/stores', label: '판매점 찾기' },
 ];
 

@@ -40,7 +40,7 @@ Cowork 세션에서 아래 10개 파일을 이미 로컬에 반영했는데, `ts
 
 ### 1.3 도메인 — 기존 유지 vs 로또랩 관련 신규 도메인 구매
 
-**결정 (제안 단계, 최종 확정 아님): 기존 `lotto-mini-app-three.vercel.app` 유지.** 새 도메인은 사이트 나이(신뢰도)가 리셋돼 1.1의 "조기 신청" 전략과 정면으로 충돌한다. `lib/site.ts`의 `SITE_URL`이 기존 도메인으로 하드코딩돼 있는데, 이후 도메인을 바꾸기로 하면 이 파일 하나만 고치면 되도록 의도적으로 분리해뒀다.
+**최종 결정 (2026-07-24): `lottolab.coredxi.com`로 연동.** 사용자가 보유한 루트 도메인 `coredxi.com`에 서브도메인을 붙이는 방식. 애드센스 조기 신청 전략(1.1)은 새 도메인으로도 그대로 진행하기로 확정 — 사이트 나이/신뢰도가 리셋되는 트레이드오프를 인지한 상태로 사용자가 명시적으로 선택했다. `lib/site.ts`의 `SITE_URL`이 도메인 문자열의 유일한 출처이므로, DNS 연동·Vercel 도메인 검증이 끝나는 대로 이 파일 한 줄만 고치면 전환된다(sitemap.ts/robots.ts/metadataBase 전부 자동 반영). 텔레그램 `APP_URL` 환경변수와 메뉴 버튼(`setChatMenuButton`)도 함께 갱신 필요 — BotFather Direct Link Mini App(`t.me/lotto_mini_bot/app`)은 Bot API로 변경 불가하니 별도로 BotFather에서 처리해야 한다(`telegram-bot-deployment` 메모리 참고).
 
 ### 1.4 신규 랜딩페이지 우선순위 — 회차별 개별 페이지 우선, 나머지 3개(지역별 판매점/세금계산기/내번호확인)는 2단계 보류
 
@@ -80,6 +80,8 @@ Cowork 세션에서 아래 10개 파일을 이미 로컬에 반영했는데, `ts
 
 ## 4. 아직 정해지지 않은 질문
 
-- 1.3 도메인 유지 여부 최종 확정
 - 1.6 텔레그램 브랜드명 통일 여부
-- 회차별 페이지 URL 구조 최종 확정(`/result/[회차번호]` vs 다른 패턴), 페이지네이션 방식
+
+**해결됨:**
+- 1.3 도메인: `lottolab.coredxi.com`로 확정 (2026-07-24, 위 1.3 참고)
+- 회차별 페이지 URL 구조: `/result/[회차번호]` + `/result` 인덱스(기존 `StoreListView`와 동일한 "N개 더 보기" 증분 페이지네이션)로 구현 완료 (2026-07-24 세션, `docs/superpowers/plans/2026-07-24-phase1-followup.md` 참고)

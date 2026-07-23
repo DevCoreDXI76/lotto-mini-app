@@ -6,6 +6,7 @@ import fullHistory from '@/data/lotto-full-history.json';
 import type { LottoDraw } from '@/lib/lotto/types';
 import { computeFrequencyRanking } from '@/lib/lotto/stats';
 import { NumberBall } from '@/components/lotto/NumberBall';
+import { SITE_NAME } from '@/lib/site';
 
 export default function Home() {
   const history = fullHistory as LottoDraw[];
@@ -14,7 +15,7 @@ export default function Home() {
   return (
     <main className="min-w-0 max-w-xl mx-auto p-6 space-y-6">
       <div>
-        <h1 className="text-2xl font-bold">로또랩</h1>
+        <h1 className="text-2xl font-bold">{SITE_NAME}</h1>
         <p className="text-sm text-gray-500 mt-1">
           번호 생성기·통계·판매점 찾기를 한 곳에서 무료로.
         </p>

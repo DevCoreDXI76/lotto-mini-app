@@ -15,8 +15,8 @@ export function AppNav() {
   const pathname = usePathname();
 
   return (
-    <nav className="max-w-5xl mx-auto px-4 sm:px-6 pt-4 flex justify-center">
-      <div className="flex gap-1 overflow-x-auto rounded-full bg-slate-100 p-1">
+    <header className="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-slate-200">
+      <nav className="max-w-5xl mx-auto px-4 sm:px-6 py-3 flex justify-center gap-2 overflow-x-auto">
         {NAV_ITEMS.map((item) => {
           const active = pathname === item.href;
           return (
@@ -24,15 +24,17 @@ export function AppNav() {
               key={item.href}
               href={item.href}
               aria-current={active ? 'page' : undefined}
-              className={`px-3 py-1.5 rounded-full text-sm whitespace-nowrap transition-colors ${
-                active ? 'bg-[#2B52F0] text-white shadow-sm' : 'text-slate-600 hover:bg-white/70'
+              className={`px-3 py-1.5 rounded-full text-sm whitespace-nowrap transition-colors border ${
+                active
+                  ? 'bg-[#2B52F0] text-white border-[#2B52F0] shadow-sm'
+                  : 'bg-white text-slate-600 border-slate-200 shadow-sm hover:border-slate-300 hover:bg-slate-50'
               }`}
             >
               {item.label}
             </Link>
           );
         })}
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 }

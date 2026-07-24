@@ -25,6 +25,9 @@ export const metadata: Metadata = {
   },
   description:
     "번호 생성기, 예산 기반 추천, 역대 당첨번호 통계, 전국 판매점 찾기까지 한 곳에서 무료로 이용하는 로또 정보 도구 모음입니다. 당첨을 보장하지 않는 재미 목적의 서비스입니다.",
+  verification: {
+    google: "5IgXgkeaDCBmlJl1UKGnyCMVSbSjVd43RudqvWmtti0",
+  },
 };
 
 export default function RootLayout({

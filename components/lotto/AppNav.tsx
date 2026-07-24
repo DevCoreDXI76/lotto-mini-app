@@ -15,21 +15,24 @@ export function AppNav() {
   const pathname = usePathname();
 
   return (
-    <nav className="max-w-5xl mx-auto px-4 sm:px-6 pt-4 flex gap-2 overflow-x-auto">
-      {NAV_ITEMS.map((item) => {
-        const active = pathname === item.href;
-        return (
-          <Link
-            key={item.href}
-            href={item.href}
-            className={`px-3 py-1.5 rounded-full text-sm whitespace-nowrap transition-colors ${
-              active ? 'bg-black text-white' : 'bg-white text-gray-600 shadow-sm hover:shadow'
-            }`}
-          >
-            {item.label}
-          </Link>
-        );
-      })}
+    <nav className="max-w-5xl mx-auto px-4 sm:px-6 pt-4 flex justify-center">
+      <div className="flex gap-1 overflow-x-auto rounded-full bg-slate-100 p-1">
+        {NAV_ITEMS.map((item) => {
+          const active = pathname === item.href;
+          return (
+            <Link
+              key={item.href}
+              href={item.href}
+              aria-current={active ? 'page' : undefined}
+              className={`px-3 py-1.5 rounded-full text-sm whitespace-nowrap transition-colors ${
+                active ? 'bg-[#2B52F0] text-white shadow-sm' : 'text-slate-600 hover:bg-white/70'
+              }`}
+            >
+              {item.label}
+            </Link>
+          );
+        })}
+      </div>
     </nav>
   );
 }

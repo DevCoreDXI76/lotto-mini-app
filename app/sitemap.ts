@@ -3,7 +3,7 @@ import { SITE_URL } from '@/lib/site';
 import fullHistory from '@/data/lotto-full-history.json';
 import type { LottoDraw } from '@/lib/lotto/types';
 
-const routes = ['', '/generator', '/stats', '/stores', '/result'];
+const routes = ['', '/generator', '/stats', '/stores', '/result', '/privacy'];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${SITE_URL}${route}`,
     lastModified,
     changeFrequency: 'weekly' as const,
-    priority: route === '' ? 1 : 0.8,
+    priority: route === '' ? 1 : route === '/privacy' ? 0.3 : 0.8,
   }));
 
   const resultEntries = history.map((draw) => ({

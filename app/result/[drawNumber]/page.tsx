@@ -6,6 +6,7 @@ import type { LottoDraw } from '@/lib/lotto/types';
 import { computeDrawInsight } from '@/lib/lotto/drawInsights';
 import { NumberBall } from '@/components/lotto/NumberBall';
 import { Disclaimer } from '@/components/lotto/Disclaimer';
+import { pageMetadata } from '@/lib/site';
 
 const history = fullHistory as LottoDraw[];
 const byDrawNumber = new Map(history.map((draw) => [draw.drawNumber, draw]));
@@ -25,10 +26,11 @@ export async function generateMetadata({
   const draw = byDrawNumber.get(Number(drawNumber));
   if (!draw) return {};
 
-  return {
-    title: `로또 ${draw.drawNumber}회 당첨번호`,
-    description: `${draw.date} 추첨된 로또 ${draw.drawNumber}회 당첨번호, 보너스번호, 홀짝 비율, 번호 합계와 직전 회차 대비 변화를 확인하세요.`,
-  };
+  return pageMetadata(
+    `/result/${draw.drawNumber}`,
+    `로또 ${draw.drawNumber}회 당첨번호`,
+    `${draw.date} 추첨된 로또 ${draw.drawNumber}회 당첨번호, 보너스번호, 홀짝 비율, 번호 합계와 직전 회차 대비 변화를 확인하세요.`,
+  );
 }
 
 export default async function ResultPage({

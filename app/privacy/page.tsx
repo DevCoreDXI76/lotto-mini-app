@@ -1,12 +1,12 @@
 // app/privacy/page.tsx
 import type { Metadata } from 'next';
-import { SITE_NAME } from '@/lib/site';
+import { SITE_NAME, pageMetadata } from '@/lib/site';
 
-export const metadata: Metadata = {
-  title: '개인정보처리방침 · 운영자 정보',
-  description:
-    `${SITE_NAME}의 개인정보처리방침과 서비스 운영자 연락처를 안내합니다.`,
-};
+export const metadata: Metadata = pageMetadata(
+  '/privacy',
+  '개인정보처리방침 · 운영자 정보',
+  `${SITE_NAME}의 개인정보처리방침과 서비스 운영자 연락처를 안내합니다.`,
+);
 
 const EFFECTIVE_DATE = '2026-07-24';
 const CONTACT_EMAIL = 'devcoredxi00@coredxi.com';

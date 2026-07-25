@@ -8,12 +8,13 @@ import { NumberBall } from '@/components/lotto/NumberBall';
 import { FullRankingToggle } from '@/components/lotto/FullRankingToggle';
 import { Faq } from '@/components/lotto/Faq';
 import { AdSlot } from '@/components/lotto/AdSlot';
+import { pageMetadata } from '@/lib/site';
 
-export const metadata: Metadata = {
-  title: '로또 당첨번호 통계',
-  description:
-    '역대 로또 당첨번호를 분석해 가장 많이 나온 번호 TOP 6와 전체 순위를 확인하세요. 과거 데이터 기반 통계이며 향후 당첨을 예측하지 않습니다.',
-};
+export const metadata: Metadata = pageMetadata(
+  '/stats',
+  '로또 당첨번호 통계',
+  '역대 로또 당첨번호를 분석해 가장 많이 나온 번호 TOP 6와 전체 순위를 확인하세요. 과거 데이터 기반 통계이며 향후 당첨을 예측하지 않습니다.',
+);
 
 const STATS_FAQ_ITEMS = [
   {

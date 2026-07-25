@@ -2,11 +2,13 @@ import type { Metadata } from 'next';
 import fullHistory from '@/data/lotto-full-history.json';
 import type { LottoDraw } from '@/lib/lotto/types';
 import { ResultIndexList } from '@/components/lotto/ResultIndexList';
+import { pageMetadata } from '@/lib/site';
 
-export const metadata: Metadata = {
-  title: '회차별 당첨번호 전체 목록',
-  description: '로또 6/45 역대 전체 회차의 당첨번호를 회차별로 확인하세요.',
-};
+export const metadata: Metadata = pageMetadata(
+  '/result',
+  '회차별 당첨번호 전체 목록',
+  '로또 6/45 역대 전체 회차의 당첨번호를 회차별로 확인하세요.',
+);
 
 export default function ResultIndexPage() {
   const history = fullHistory as LottoDraw[];

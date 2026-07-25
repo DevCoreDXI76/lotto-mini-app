@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import { FirstVisitNotice } from "@/components/lotto/FirstVisitNotice";
 import { AppNav } from "@/components/lotto/AppNav";
@@ -42,6 +43,12 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full">
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8125995278513075"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
         <FirstVisitNotice />
         <AppNav />
         {children}

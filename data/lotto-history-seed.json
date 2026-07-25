@@ -1,5 +1,31 @@
 [
   {
+    "drawNumber": 1233,
+    "date": "2026-07-18",
+    "numbers": [
+      2,
+      7,
+      20,
+      25,
+      37,
+      40
+    ],
+    "bonusNumber": 29
+  },
+  {
+    "drawNumber": 1232,
+    "date": "2026-07-11",
+    "numbers": [
+      12,
+      15,
+      19,
+      22,
+      24,
+      36
+    ],
+    "bonusNumber": 3
+  },
+  {
     "drawNumber": 1231,
     "date": "2026-07-04",
     "numbers": [
@@ -1922,31 +1948,5 @@
       42
     ],
     "bonusNumber": 5
-  },
-  {
-    "drawNumber": 1083,
-    "date": "2023-09-02",
-    "numbers": [
-      3,
-      7,
-      14,
-      15,
-      22,
-      38
-    ],
-    "bonusNumber": 17
-  },
-  {
-    "drawNumber": 1082,
-    "date": "2023-08-26",
-    "numbers": [
-      21,
-      26,
-      27,
-      32,
-      34,
-      42
-    ],
-    "bonusNumber": 31
   }
 ]

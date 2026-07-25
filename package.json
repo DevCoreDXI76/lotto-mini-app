@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
+    "data:update-latest": "tsx scripts/update-latest-draws.ts",
     "notion:bootstrap": "node .notion/scripts/notion-bootstrap.mjs",
     "notion:check": "node .notion/scripts/notion-bootstrap.mjs --check-only",
     "hooks:install": "node .notion/scripts/install-git-hooks.mjs",

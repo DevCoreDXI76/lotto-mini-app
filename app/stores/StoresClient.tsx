@@ -14,6 +14,17 @@ import { StoreMapView } from '@/components/lotto/StoreMapView';
 
 const stores = storesData as StoreWithBadge[];
 
+const STORE_DATA_SNAPSHOT_DATE = '2025-06-07';
+
+function monthsSince(dateStr: string): number {
+  const snapshot = new Date(dateStr);
+  const now = new Date();
+  let months =
+    (now.getFullYear() - snapshot.getFullYear()) * 12 + (now.getMonth() - snapshot.getMonth());
+  if (now.getDate() < snapshot.getDate()) months -= 1;
+  return Math.max(0, months);
+}
+
 type LocationStatus = 'idle' | 'granted' | 'denied' | 'unsupported';
 
 export function StoresClient() {
@@ -59,9 +70,18 @@ export function StoresClient() {
         <h1 className="text-2xl font-bold">판매점 찾기</h1>
 
         <p className="text-xs text-gray-500">
-          판매점 목록은 2025-06-07 기준이며, 폐업·신규 매장이 반영되지 않았을 수 있습니다. 1등 배출 이력은
-          2025년 6월 기준입니다.
+          판매점 목록은 {STORE_DATA_SNAPSHOT_DATE} 기준(약 {monthsSince(STORE_DATA_SNAPSHOT_DATE)}개월
+          전)이며, 폐업·신규 매장이 반영되지 않았을 수 있습니다. 1등 배출 이력은 2025년 6월 기준입니다.
         </p>
+
+        <a
+          href="https://www.dhlottery.co.kr/prchsplcsrch/home"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block rounded-lg shadow-sm bg-blue-50 border border-blue-200 px-4 py-3 text-sm text-blue-800 hover:shadow transition-shadow"
+        >
+          지금 영업 중인지 확실히 확인하려면 → <span className="font-semibold underline">동행복권에서 실시간 조회</span>
+        </a>
 
         <div className="flex gap-2">
           <button

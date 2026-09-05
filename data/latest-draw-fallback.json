@@ -1,13 +1,13 @@
 {
-  "drawNumber": 1238,
-  "date": "2026-08-22",
+  "drawNumber": 1240,
+  "date": "2026-09-05",
   "numbers": [
-    2,
+    11,
     13,
-    18,
-    32,
-    38,
-    42
+    19,
+    20,
+    31,
+    44
   ],
-  "bonusNumber": 22
+  "bonusNumber": 27
 }

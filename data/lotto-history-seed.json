@@ -1,5 +1,18 @@
 [
   {
+    "drawNumber": 1245,
+    "date": "2026-10-10",
+    "numbers": [
+      4,
+      5,
+      25,
+      28,
+      32,
+      42
+    ],
+    "bonusNumber": 12
+  },
+  {
     "drawNumber": 1244,
     "date": "2026-10-03",
     "numbers": [
@@ -1935,18 +1948,5 @@
       43
     ],
     "bonusNumber": 34
-  },
-  {
-    "drawNumber": 1095,
-    "date": "2023-11-25",
-    "numbers": [
-      8,
-      14,
-      28,
-      29,
-      34,
-      40
-    ],
-    "bonusNumber": 12
   }
 ]
